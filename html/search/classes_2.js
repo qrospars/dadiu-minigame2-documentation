@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ddol_54',['DDOL',['../class_d_d_o_l.html',1,'']]]
+  ['ddol_46',['DDOL',['../class_d_d_o_l.html',1,'']]]
 ];

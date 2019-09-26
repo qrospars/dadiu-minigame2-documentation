@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uimanager_85',['UIManager',['../class_u_i_manager.html',1,'']]]
+  ['visibilitycheck_71',['VisibilityCheck',['../class_visibility_check.html',1,'']]]
 ];

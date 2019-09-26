@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['testanimplayback_83',['TestAnimPlayback',['../class_test_anim_playback.html',1,'']]],
-  ['togglebtnlogic_84',['ToggleBtnLogic',['../class_toggle_btn_logic.html',1,'']]]
+  ['uimanager_70',['UIManager',['../class_u_i_manager.html',1,'']]]
 ];
