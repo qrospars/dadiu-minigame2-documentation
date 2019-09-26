@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['returntoscene_64',['ReturnToScene',['../class_return_to_scene.html',1,'']]]
+  ['pausegame_79',['PauseGame',['../class_pause_game.html',1,'']]]
 ];
