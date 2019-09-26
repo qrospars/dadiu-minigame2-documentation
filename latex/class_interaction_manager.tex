@@ -1,0 +1,76 @@
+\hypertarget{class_interaction_manager}{}\doxysection{Interaction\+Manager Class Reference}
+\label{class_interaction_manager}\index{InteractionManager@{InteractionManager}}
+Inheritance diagram for Interaction\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_interaction_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_aba3367f62082feda161a5b1e09e7b5af}\label{class_interaction_manager_aba3367f62082feda161a5b1e09e7b5af}} 
+void {\bfseries Initialize} ()
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a91d28abaea2d6c780149d9ac5d966ec9}\label{class_interaction_manager_a91d28abaea2d6c780149d9ac5d966ec9}} 
+Vector3 {\bfseries Get\+Mouse\+Position} ()
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a0793d2e8e2b1d28ae927ceba1c79295a}\label{class_interaction_manager_a0793d2e8e2b1d28ae927ceba1c79295a}} 
+void {\bfseries Get\+Mouse\+Velocity} (out Vector3 mouse\+Delta)
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a7ebe7459752a727729d7b62991971dac}\label{class_interaction_manager_a7ebe7459752a727729d7b62991971dac}} 
+void {\bfseries Get\+Mouse\+Velocity} ()
+\item 
+Vector3 \mbox{\hyperlink{class_interaction_manager_a3484fcd4f708181a3cb89b51a4f97657}{Get\+Hit\+Point\+On\+Interaction\+Plane}} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector3 global space location of the intersection between a raycast from the camera towards the mouse position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_interaction_manager_a3185f9c7b58687c0eca040f6502bfdba}\label{class_interaction_manager_a3185f9c7b58687c0eca040f6502bfdba}} 
+void {\bfseries Drag\+To\+Grow} ()
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a5938df5be3d24dc6a689a49062a3c114}\label{class_interaction_manager_a5938df5be3d24dc6a689a49062a3c114}} 
+void {\bfseries Drag\+To\+Throw} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_afdab44ec2df5f3b2b854d043d219aecc}\label{class_interaction_manager_afdab44ec2df5f3b2b854d043d219aecc}} 
+Camera {\bfseries m\+\_\+\+Camera}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a30d22cd5d98cd9ad47cbddc1388b6bac}\label{class_interaction_manager_a30d22cd5d98cd9ad47cbddc1388b6bac}} 
+Layer\+Mask {\bfseries interaction\+Plane\+Mask}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a35e07c0fc44075a81280833e27ded7ad}\label{class_interaction_manager_a35e07c0fc44075a81280833e27ded7ad}} 
+Transform {\bfseries hit\+Object}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a32e6756838abfdf1f4bcb21ec50adb15}\label{class_interaction_manager_a32e6756838abfdf1f4bcb21ec50adb15}} 
+bool {\bfseries Alternate\+Control\+Method} = false
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a24f45578acae184a456666dd1a37fbbc}\label{class_interaction_manager_a24f45578acae184a456666dd1a37fbbc}} 
+Vector3 {\bfseries mouse\+Delta}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_interaction_manager_a3755b827699678bc6877f1d74c30e731}\label{class_interaction_manager_a3755b827699678bc6877f1d74c30e731}} 
+static \mbox{\hyperlink{class_interaction_manager}{Interaction\+Manager}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interaction_manager_a3484fcd4f708181a3cb89b51a4f97657}\label{class_interaction_manager_a3484fcd4f708181a3cb89b51a4f97657}} 
+\index{InteractionManager@{InteractionManager}!GetHitPointOnInteractionPlane@{GetHitPointOnInteractionPlane}}
+\index{GetHitPointOnInteractionPlane@{GetHitPointOnInteractionPlane}!InteractionManager@{InteractionManager}}
+\doxysubsubsection{\texorpdfstring{GetHitPointOnInteractionPlane()}{GetHitPointOnInteractionPlane()}}
+{\footnotesize\ttfamily Vector3 Interaction\+Manager.\+Get\+Hit\+Point\+On\+Interaction\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a vector3 global space location of the intersection between a raycast from the camera towards the mouse position 
+
+\begin{DoxyReturn}{Returns}
+Returns a point on the interaction plane
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Subversion/dadiu-\/minigame2/\+Assets/\+Scripts/Interaction\+Manager.\+cs\end{DoxyCompactItemize}
