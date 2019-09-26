@@ -1,0 +1,49 @@
+\hypertarget{class_save_manager}{}\doxysection{Save\+Manager Class Reference}
+\label{class_save_manager}\index{SaveManager@{SaveManager}}
+Inheritance diagram for Save\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_save_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_save_manager_a5be620b5f5e4a49036ce0a2c135029ba}{Save\+State}} ()
+\begin{DoxyCompactList}\small\item\em Goes through all the visible objects in the scene and gets their properties, adding them to the Save\+State string stored in Player\+Prefs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_save_manager_a14dda45d9d17978a3579490d5eb61095}{Load\+State}} ()
+\begin{DoxyCompactList}\small\item\em Loads the saved state from Player\+Prefs Applies positions and rotations to all the objects that are found in the saveed state, and destroys the rest (those will be objects that have fallen out of boundaries or destroyed in any other way before the save) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_save_manager_a3829fa82effd0284f015ef95ec543d2e}\label{class_save_manager_a3829fa82effd0284f015ef95ec543d2e}} 
+static List$<$ Game\+Object $>$ {\bfseries visible\+Objects}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_save_manager_a14dda45d9d17978a3579490d5eb61095}\label{class_save_manager_a14dda45d9d17978a3579490d5eb61095}} 
+\index{SaveManager@{SaveManager}!LoadState@{LoadState}}
+\index{LoadState@{LoadState}!SaveManager@{SaveManager}}
+\doxysubsubsection{\texorpdfstring{LoadState()}{LoadState()}}
+{\footnotesize\ttfamily void Save\+Manager.\+Load\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loads the saved state from Player\+Prefs Applies positions and rotations to all the objects that are found in the saveed state, and destroys the rest (those will be objects that have fallen out of boundaries or destroyed in any other way before the save) 
+
+\mbox{\Hypertarget{class_save_manager_a5be620b5f5e4a49036ce0a2c135029ba}\label{class_save_manager_a5be620b5f5e4a49036ce0a2c135029ba}} 
+\index{SaveManager@{SaveManager}!SaveState@{SaveState}}
+\index{SaveState@{SaveState}!SaveManager@{SaveManager}}
+\doxysubsubsection{\texorpdfstring{SaveState()}{SaveState()}}
+{\footnotesize\ttfamily void Save\+Manager.\+Save\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Goes through all the visible objects in the scene and gets their properties, adding them to the Save\+State string stored in Player\+Prefs 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Subversion/dadiu-\/minigame2/\+Assets/\+Scripts/\+Managers/Save\+Manager.\+cs\end{DoxyCompactItemize}
