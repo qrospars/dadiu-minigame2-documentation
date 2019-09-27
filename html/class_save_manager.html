@@ -62,8 +62,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_save_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SaveManager Class Reference</div>  </div>
@@ -76,24 +75,18 @@ Inheritance diagram for SaveManager:</div>
   <img src="class_save_manager.png" alt=""/>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a5be620b5f5e4a49036ce0a2c135029ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_manager.html#a5be620b5f5e4a49036ce0a2c135029ba">SaveState</a> ()</td></tr>
-<tr class="memdesc:a5be620b5f5e4a49036ce0a2c135029ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all the visible objects in the scene and gets their properties, adding them to the SaveState string stored in PlayerPrefs  <a href="class_save_manager.html#a5be620b5f5e4a49036ce0a2c135029ba">More...</a><br /></td></tr>
-<tr class="separator:a5be620b5f5e4a49036ce0a2c135029ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14dda45d9d17978a3579490d5eb61095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_manager.html#a14dda45d9d17978a3579490d5eb61095">LoadState</a> ()</td></tr>
-<tr class="memdesc:a14dda45d9d17978a3579490d5eb61095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the saved state from PlayerPrefs Applies positions and rotations to all the objects that are found in the saveed state, and destroys the rest (those will be objects that have fallen out of boundaries or destroyed in any other way before the save)  <a href="class_save_manager.html#a14dda45d9d17978a3579490d5eb61095">More...</a><br /></td></tr>
-<tr class="separator:a14dda45d9d17978a3579490d5eb61095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a3829fa82effd0284f015ef95ec543d2e"><td class="memItemLeft" align="right" valign="top"><a id="a3829fa82effd0284f015ef95ec543d2e"></a>
-static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>visibleObjects</b></td></tr>
-<tr class="separator:a3829fa82effd0284f015ef95ec543d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abc1666a5292da2b64d053fc9e36a9c78"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_manager.html#abc1666a5292da2b64d053fc9e36a9c78">SaveState</a> ()</td></tr>
+<tr class="memdesc:abc1666a5292da2b64d053fc9e36a9c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Goes through all the objects in the scene inside the <a class="el" href="class_level_container.html">LevelContainer</a> object and gets their properties, adding them to the SaveState string stored in PlayerPrefs Skips the objects that are inside the Environment object since they should always be on the same position  <a href="class_save_manager.html#abc1666a5292da2b64d053fc9e36a9c78">More...</a><br /></td></tr>
+<tr class="separator:abc1666a5292da2b64d053fc9e36a9c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71033bee48f97cb13f92e0d965ce4ed"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_save_manager.html#af71033bee48f97cb13f92e0d965ce4ed">LoadState</a> ()</td></tr>
+<tr class="memdesc:af71033bee48f97cb13f92e0d965ce4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the saved state from PlayerPrefs Applies positions and rotations to all the objects that are found in the saveed state, and destroys the rest (those will be objects that have fallen out of boundaries or destroyed in any other way before the save)  <a href="class_save_manager.html#af71033bee48f97cb13f92e0d965ce4ed">More...</a><br /></td></tr>
+<tr class="separator:af71033bee48f97cb13f92e0d965ce4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a14dda45d9d17978a3579490d5eb61095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14dda45d9d17978a3579490d5eb61095">&#9670;&nbsp;</a></span>LoadState()</h2>
+<a id="af71033bee48f97cb13f92e0d965ce4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71033bee48f97cb13f92e0d965ce4ed">&#9670;&nbsp;</a></span>LoadState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,7 +95,7 @@ static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="botto
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SaveManager.LoadState </td>
+          <td class="memname">static void SaveManager.LoadState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -110,7 +103,7 @@ static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="botto
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -119,8 +112,8 @@ static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
-<a id="a5be620b5f5e4a49036ce0a2c135029ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5be620b5f5e4a49036ce0a2c135029ba">&#9670;&nbsp;</a></span>SaveState()</h2>
+<a id="abc1666a5292da2b64d053fc9e36a9c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1666a5292da2b64d053fc9e36a9c78">&#9670;&nbsp;</a></span>SaveState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +122,7 @@ static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="botto
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SaveManager.SaveState </td>
+          <td class="memname">static void SaveManager.SaveState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -137,12 +130,12 @@ static List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="botto
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Goes through all the visible objects in the scene and gets their properties, adding them to the SaveState string stored in PlayerPrefs </p>
+<p>Goes through all the objects in the scene inside the <a class="el" href="class_level_container.html">LevelContainer</a> object and gets their properties, adding them to the SaveState string stored in PlayerPrefs Skips the objects that are inside the Environment object since they should always be on the same position </p>
 
 </div>
 </div>
