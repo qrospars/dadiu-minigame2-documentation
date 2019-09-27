@@ -62,6 +62,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_trigger_linker-members.html">List of all members</a>  </div>
@@ -76,20 +77,27 @@ Inheritance diagram for TriggerLinker:</div>
   <img src="class_trigger_linker.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a5800771c101c466711eb6dcf3134db4c"><td class="memItemLeft" align="right" valign="top"><a id="a5800771c101c466711eb6dcf3134db4c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SFX</b> { <b>None</b> = 1, 
+<b>sfx_hole</b> = 2
+ }</td></tr>
+<tr class="separator:a5800771c101c466711eb6dcf3134db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fb8b05245709863b8b756b8ba6f4d01"><td class="memItemLeft" align="right" valign="top"><a id="a6fb8b05245709863b8b756b8ba6f4d01"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> ()</td></tr>
-<tr class="separator:a6fb8b05245709863b8b756b8ba6f4d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e375c51f5df5fda5c4f19c01c5b7eaa"><td class="memItemLeft" align="right" valign="top"><a id="a6e375c51f5df5fda5c4f19c01c5b7eaa"></a>
+IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> (float delay)</td></tr>
+<tr class="separator:a6e375c51f5df5fda5c4f19c01c5b7eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a944a59259460bed1d47758527b9a5f43"><td class="memItemLeft" align="right" valign="top"><a id="a944a59259460bed1d47758527b9a5f43"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>distanceThreshold</b> = 0.1f</td></tr>
-<tr class="separator:a944a59259460bed1d47758527b9a5f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95babc29cbd192e87fc2284d42f7ae0c"><td class="memItemLeft" align="right" valign="top"><a id="a95babc29cbd192e87fc2284d42f7ae0c"></a>
-List&lt; <a class="el" href="interface_i_effector.html">IEffector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>effectors</b></td></tr>
-<tr class="separator:a95babc29cbd192e87fc2284d42f7ae0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf27c8b7ec2486a21ebba99f68a115c"><td class="memItemLeft" align="right" valign="top"><a id="afaf27c8b7ec2486a21ebba99f68a115c"></a>
+SFX&#160;</td><td class="memItemRight" valign="bottom"><b>sfx</b> = SFX.None</td></tr>
+<tr class="separator:afaf27c8b7ec2486a21ebba99f68a115c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b162515d27b6d9c001f4b4f737c82c"><td class="memItemLeft" align="right" valign="top"><a id="a08b162515d27b6d9c001f4b4f737c82c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>delay</b> = 0</td></tr>
+<tr class="separator:a08b162515d27b6d9c001f4b4f737c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae257ab5f9649d0f325f44f692587c03f"><td class="memItemLeft" align="right" valign="top"><a id="ae257ab5f9649d0f325f44f692587c03f"></a>
 Transform&#160;</td><td class="memItemRight" valign="bottom"><b>particleEffect</b></td></tr>
 <tr class="separator:ae257ab5f9649d0f325f44f692587c03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,6 +110,9 @@ List&lt; <a class="el" href="class_object_state.html">ObjectState</a> &gt;&#160;
 <tr class="memitem:a68cf679608ae88965266bfdbed1df588"><td class="memItemLeft" align="right" valign="top"><a id="a68cf679608ae88965266bfdbed1df588"></a>
 List&lt; <a class="el" href="class_object_state.html">ObjectState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AsleepObjects</b></td></tr>
 <tr class="separator:a68cf679608ae88965266bfdbed1df588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd3cd59b9d1ea6327c99dc6c203bc96"><td class="memItemLeft" align="right" valign="top"><a id="a5bd3cd59b9d1ea6327c99dc6c203bc96"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spawnParticleAtCollisionLocation</b> = false</td></tr>
+<tr class="separator:a5bd3cd59b9d1ea6327c99dc6c203bc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/quentinrospars/Documents/Subversion/dadiu-minigame2/Assets/Scripts/Utility/TriggerLinker.cs</li>
