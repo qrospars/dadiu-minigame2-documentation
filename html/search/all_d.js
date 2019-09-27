@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['savemanager_38',['SaveManager',['../class_save_manager.html',1,'']]],
-  ['savestate_39',['SaveState',['../class_save_manager.html#abc1666a5292da2b64d053fc9e36a9c78',1,'SaveManager']]],
-  ['setrtpcvalue_40',['SetRTPCValue',['../class_set_r_t_p_c_value.html',1,'']]],
-  ['settingcache_41',['SettingCache',['../class_settings_manager_1_1_setting_cache.html',1,'SettingsManager']]],
-  ['settingsmanager_42',['SettingsManager',['../class_settings_manager.html',1,'']]],
-  ['showhandgesture_43',['ShowHandGesture',['../class_show_hand_gesture.html',1,'']]],
-  ['simplecameracontroller_44',['SimpleCameraController',['../class_unity_template_projects_1_1_simple_camera_controller.html',1,'UnityTemplateProjects']]],
-  ['sliderlogic_45',['SliderLogic',['../class_slider_logic.html',1,'']]]
+  ['releaseobjects_36',['ReleaseObjects',['../class_gravity_field.html#acd3ac158e1c44332ca190538779af2e5',1,'GravityField']]],
+  ['restartlogic_37',['RestartLogic',['../class_restart_logic.html',1,'']]],
+  ['returntoscene_38',['ReturnToScene',['../class_return_to_scene.html',1,'']]]
 ];

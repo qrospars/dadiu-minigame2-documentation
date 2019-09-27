@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valuetoggledeventargs_50',['ValueToggledEventArgs',['../class_settings_manager_1_1_value_toggled_event_args.html',1,'SettingsManager']]],
-  ['visibilitycheck_51',['VisibilityCheck',['../class_visibility_check.html',1,'']]]
+  ['uimanager_50',['UIManager',['../class_u_i_manager.html',1,'']]],
+  ['unitytemplateprojects_51',['UnityTemplateProjects',['../namespace_unity_template_projects.html',1,'']]]
 ];
