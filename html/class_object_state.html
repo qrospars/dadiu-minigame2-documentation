@@ -83,12 +83,31 @@ Public Types</h2></td></tr>
 <b>Asleep</b>
  }</td></tr>
 <tr class="separator:a45cc2ae2b1a9dae21af1612e857b9f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0049989a0ccafde11522c77d09f24cc2"><td class="memItemLeft" align="right" valign="top"><a id="a0049989a0ccafde11522c77d09f24cc2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>BurningState</b> { <b>NotOnFire</b>, 
+<b>OnFire</b>
+ }</td></tr>
+<tr class="separator:a0049989a0ccafde11522c77d09f24cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fd4779e2978f36827b76c43bf4e681f"><td class="memItemLeft" align="right" valign="top"><a id="a9fd4779e2978f36827b76c43bf4e681f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchState</b> (State state)</td></tr>
 <tr class="separator:a9fd4779e2978f36827b76c43bf4e681f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08310917c07e8e769cdceed697b33b67"><td class="memItemLeft" align="right" valign="top"><a id="a08310917c07e8e769cdceed697b33b67"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchFireState</b> (BurningState state)</td></tr>
+<tr class="separator:a08310917c07e8e769cdceed697b33b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7a949e22d8e4bdee5246a323931be5"><td class="memItemLeft" align="right" valign="top"><a id="acd7a949e22d8e4bdee5246a323931be5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PutOnFire</b> ()</td></tr>
+<tr class="separator:acd7a949e22d8e4bdee5246a323931be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3729625b175d0659f2653525a511bd8"><td class="memItemLeft" align="right" valign="top"><a id="ae3729625b175d0659f2653525a511bd8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AlignFire</b> ()</td></tr>
+<tr class="separator:ae3729625b175d0659f2653525a511bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7280c597f448b07815b73a8fbc54c59f"><td class="memItemLeft" align="right" valign="top"><a id="a7280c597f448b07815b73a8fbc54c59f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PutOutFire</b> ()</td></tr>
+<tr class="separator:a7280c597f448b07815b73a8fbc54c59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbda6bf90707a032eff582567fb9e93"><td class="memItemLeft" align="right" valign="top"><a id="adbbda6bf90707a032eff582567fb9e93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCollisionEnter</b> (Collision other)</td></tr>
+<tr class="separator:adbbda6bf90707a032eff582567fb9e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -98,6 +117,12 @@ State&#160;</td><td class="memItemRight" valign="bottom"><b>myState</b> = State.
 <tr class="memitem:a6025a040a15beba600e09ccc9f8de7a8"><td class="memItemLeft" align="right" valign="top"><a id="a6025a040a15beba600e09ccc9f8de7a8"></a>
 Transform&#160;</td><td class="memItemRight" valign="bottom"><b>child</b></td></tr>
 <tr class="separator:a6025a040a15beba600e09ccc9f8de7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc8abc8f639e9b78a9255ada163547c"><td class="memItemLeft" align="right" valign="top"><a id="a1dc8abc8f639e9b78a9255ada163547c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>flammable</b> = false</td></tr>
+<tr class="separator:a1dc8abc8f639e9b78a9255ada163547c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337f1da72a544b541e00408cce86f93b"><td class="memItemLeft" align="right" valign="top"><a id="a337f1da72a544b541e00408cce86f93b"></a>
+BurningState&#160;</td><td class="memItemRight" valign="bottom"><b>burningState</b> = BurningState.NotOnFire</td></tr>
+<tr class="separator:a337f1da72a544b541e00408cce86f93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dbcb162aeb6f34f91c5e3d9e542af9"><td class="memItemLeft" align="right" valign="top"><a id="a85dbcb162aeb6f34f91c5e3d9e542af9"></a>
 Rigidbody&#160;</td><td class="memItemRight" valign="bottom"><b>rb</b></td></tr>
 <tr class="separator:a85dbcb162aeb6f34f91c5e3d9e542af9"><td class="memSeparator" colspan="2">&#160;</td></tr>

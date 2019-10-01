@@ -13,12 +13,32 @@ Inheritance diagram for Object\+State\+:\begin{figure}[H]
 enum {\bfseries State} \{ {\bfseries Awake}, 
 {\bfseries Asleep}
  \}
+\item 
+\mbox{\Hypertarget{class_object_state_a0049989a0ccafde11522c77d09f24cc2}\label{class_object_state_a0049989a0ccafde11522c77d09f24cc2}} 
+enum {\bfseries Burning\+State} \{ {\bfseries Not\+On\+Fire}, 
+{\bfseries On\+Fire}
+ \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_object_state_a9fd4779e2978f36827b76c43bf4e681f}\label{class_object_state_a9fd4779e2978f36827b76c43bf4e681f}} 
 void {\bfseries Switch\+State} (State state)
+\item 
+\mbox{\Hypertarget{class_object_state_a08310917c07e8e769cdceed697b33b67}\label{class_object_state_a08310917c07e8e769cdceed697b33b67}} 
+void {\bfseries Switch\+Fire\+State} (Burning\+State state)
+\item 
+\mbox{\Hypertarget{class_object_state_acd7a949e22d8e4bdee5246a323931be5}\label{class_object_state_acd7a949e22d8e4bdee5246a323931be5}} 
+void {\bfseries Put\+On\+Fire} ()
+\item 
+\mbox{\Hypertarget{class_object_state_ae3729625b175d0659f2653525a511bd8}\label{class_object_state_ae3729625b175d0659f2653525a511bd8}} 
+void {\bfseries Align\+Fire} ()
+\item 
+\mbox{\Hypertarget{class_object_state_a7280c597f448b07815b73a8fbc54c59f}\label{class_object_state_a7280c597f448b07815b73a8fbc54c59f}} 
+void {\bfseries Put\+Out\+Fire} ()
+\item 
+\mbox{\Hypertarget{class_object_state_adbbda6bf90707a032eff582567fb9e93}\label{class_object_state_adbbda6bf90707a032eff582567fb9e93}} 
+void {\bfseries On\+Collision\+Enter} (Collision other)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -28,6 +48,12 @@ State {\bfseries my\+State} = State.\+Awake
 \item 
 \mbox{\Hypertarget{class_object_state_a6025a040a15beba600e09ccc9f8de7a8}\label{class_object_state_a6025a040a15beba600e09ccc9f8de7a8}} 
 Transform {\bfseries child}
+\item 
+\mbox{\Hypertarget{class_object_state_a1dc8abc8f639e9b78a9255ada163547c}\label{class_object_state_a1dc8abc8f639e9b78a9255ada163547c}} 
+bool {\bfseries flammable} = false
+\item 
+\mbox{\Hypertarget{class_object_state_a337f1da72a544b541e00408cce86f93b}\label{class_object_state_a337f1da72a544b541e00408cce86f93b}} 
+Burning\+State {\bfseries burning\+State} = Burning\+State.\+Not\+On\+Fire
 \item 
 \mbox{\Hypertarget{class_object_state_a85dbcb162aeb6f34f91c5e3d9e542af9}\label{class_object_state_a85dbcb162aeb6f34f91c5e3d9e542af9}} 
 Rigidbody {\bfseries rb}
