@@ -1,0 +1,51 @@
+\hypertarget{class_unity_editor_1_1_pipeline}{}\doxysection{Unity\+Editor.\+Pipeline Class Reference}
+\label{class_unity_editor_1_1_pipeline}\index{UnityEditor.Pipeline@{UnityEditor.Pipeline}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_pipeline_abf182893d802477a765db4c6c6761c50}\label{class_unity_editor_1_1_pipeline_abf182893d802477a765db4c6c6761c50}} 
+static void {\bfseries Build\+Android} ()
+\item 
+static void \mbox{\hyperlink{class_unity_editor_1_1_pipeline_a1b45be69bc3d37e83ba5489ad223e9d9}{Dev\+Build\+Android}} ()
+\item 
+static void \mbox{\hyperlink{class_unity_editor_1_1_pipeline_a383498124fae96188063b5142284f7ca}{Build\+A\+P\+K\+With\+Jenkins}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_unity_editor_1_1_pipeline_a59ef84b800636875ae972ea654b02b7b}\label{class_unity_editor_1_1_pipeline_a59ef84b800636875ae972ea654b02b7b}} 
+static string {\bfseries pathname}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static string \mbox{\hyperlink{class_unity_editor_1_1_pipeline_a797a541f11a35c483e861f3d02deeaea}{filename}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_unity_editor_1_1_pipeline_a383498124fae96188063b5142284f7ca}\label{class_unity_editor_1_1_pipeline_a383498124fae96188063b5142284f7ca}} 
+\index{UnityEditor.Pipeline@{UnityEditor.Pipeline}!BuildAPKWithJenkins@{BuildAPKWithJenkins}}
+\index{BuildAPKWithJenkins@{BuildAPKWithJenkins}!UnityEditor.Pipeline@{UnityEditor.Pipeline}}
+\doxysubsubsection{\texorpdfstring{BuildAPKWithJenkins()}{BuildAPKWithJenkins()}}
+{\footnotesize\ttfamily static void Unity\+Editor.\+Pipeline.\+Build\+A\+P\+K\+With\+Jenkins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This is a static property which will return a string, representing a$\ast$ build folder on the desktop. This does not create the folder when it$\ast$ doesn\textquotesingle{}t exists, it simply returns a suggested path. It is put on the$\ast$ ~\newline
+ desktop, so it\textquotesingle{}s easier to find but you can change the string to any$\ast$ path really. Path combine is used, for better cross platform support \mbox{\Hypertarget{class_unity_editor_1_1_pipeline_a1b45be69bc3d37e83ba5489ad223e9d9}\label{class_unity_editor_1_1_pipeline_a1b45be69bc3d37e83ba5489ad223e9d9}} 
+\index{UnityEditor.Pipeline@{UnityEditor.Pipeline}!DevBuildAndroid@{DevBuildAndroid}}
+\index{DevBuildAndroid@{DevBuildAndroid}!UnityEditor.Pipeline@{UnityEditor.Pipeline}}
+\doxysubsubsection{\texorpdfstring{DevBuildAndroid()}{DevBuildAndroid()}}
+{\footnotesize\ttfamily static void Unity\+Editor.\+Pipeline.\+Dev\+Build\+Android (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This is a static property which will return a string, representing a$\ast$ build folder on the desktop. This does not create the folder when it$\ast$ doesn\textquotesingle{}t exists, it simply returns a suggested path. It is put on the$\ast$ ~\newline
+ desktop, so it\textquotesingle{}s easier to find but you can change the string to any$\ast$ path really. Path combine is used, for better cross platform support 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_unity_editor_1_1_pipeline_a797a541f11a35c483e861f3d02deeaea}\label{class_unity_editor_1_1_pipeline_a797a541f11a35c483e861f3d02deeaea}} 
+\index{UnityEditor.Pipeline@{UnityEditor.Pipeline}!filename@{filename}}
+\index{filename@{filename}!UnityEditor.Pipeline@{UnityEditor.Pipeline}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily string Unity\+Editor.\+Pipeline.\+filename\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+This returns the filename that the build should spit it. For a start$\ast$ this just returns a current date, in a simple lexicographical format$\ast$ with the apk extension appended. Later on, you can customize this to$\ast$ include more information, such as last person to commit, what branch$\ast$ were used, version of the game, or what git-\/hash the game were using 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Git\+Hub/\+Graduation\+Game/\+Assets/\+Scripts/\+Editor/Pipeline.\+cs\end{DoxyCompactItemize}
