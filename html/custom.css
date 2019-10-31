@@ -16,7 +16,7 @@ body {
 	background: #242329;
 	background-image: none;
 	color: #D8D8D8;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 div.fragment, pre.fragment {
