@@ -1,0 +1,412 @@
+\hypertarget{class_difficulty_setting}{}\doxysection{Difficulty\+Setting Class Reference}
+\label{class_difficulty_setting}\index{DifficultySetting@{DifficultySetting}}
+Inheritance diagram for Difficulty\+Setting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_difficulty_setting}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_difficulty_setting_a01c3420ba65bd5a1b5e589179162662b}\label{class_difficulty_setting_a01c3420ba65bd5a1b5e589179162662b}} 
+enum {\bfseries Increase\+Type} \{ {\bfseries linear}, 
+{\bfseries exponentially}, 
+{\bfseries static}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_ab7c866cbc7f5d16c3b8fce3be70de26e}{Level\+Length}}
+\begin{DoxyCompactList}\small\item\em H\+OW L\+O\+NG A L\+E\+V\+EL IS (H\+OW M\+A\+NY S\+E\+C\+O\+N\+DS) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a0928bd77d5b87360db3fb725f23452b3}{Belt\+Speed}}
+\begin{DoxyCompactList}\small\item\em H\+OW F\+A\+ST T\+HE B\+E\+LT IS G\+O\+I\+NG \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a7436dc1e0c6b2727c42ada6da1632012}{Belt\+Speed\+Increase\+Start}}
+\begin{DoxyCompactList}\small\item\em W\+H\+EN T\+HE B\+E\+LT S\+P\+E\+ED S\+H\+O\+U\+LD S\+T\+A\+RT TO I\+N\+C\+R\+E\+A\+SE \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_afe5a1c9f9ef24301555f69dd6bad5965}{Belt\+Speed\+Increase\+Amount}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH T\+HE B\+E\+LT S\+P\+E\+ED IS I\+N\+C\+R\+E\+A\+S\+I\+NG BY (Amount to apply each second/millisecond/etc., depending on increase type) \end{DoxyCompactList}\item 
+Increase\+Type \mbox{\hyperlink{class_difficulty_setting_a0645b9e17c8a5c16007f4e89420d075b}{Belt\+Speed\+Increase\+Type}}
+\begin{DoxyCompactList}\small\item\em H\+OW B\+E\+LT S\+P\+E\+ED IS I\+N\+C\+R\+E\+A\+S\+I\+NG \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a9560a924aabf776c97aecacafd68409d}{Stop\+Time}}
+\begin{DoxyCompactList}\small\item\em H\+OW L\+O\+NG T\+HE O\+B\+J\+E\+CT W\+I\+LL S\+T\+OP IN F\+R\+O\+NT OF C\+H\+A\+R\+A\+C\+T\+ER \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a460e5e145ac7913b5ff3a37a5b132334}{Stop\+Time\+Decrease\+Start}}
+\begin{DoxyCompactList}\small\item\em W\+H\+EN T\+HE S\+T\+OP T\+I\+ME S\+H\+O\+U\+LD S\+T\+A\+RT TO D\+E\+C\+R\+E\+A\+SE \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_afafb236eef0d4688f17e1c4daee41563}{Stop\+Time\+Decrease\+Amount}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH T\+HE S\+T\+OP T\+I\+ME IS D\+E\+C\+R\+E\+A\+S\+I\+NG BY (Amount to apply each second/millisecond/etc., depending on decrease type) \end{DoxyCompactList}\item 
+Increase\+Type \mbox{\hyperlink{class_difficulty_setting_a463b8290e78b4555fa8e4d12e9a53277}{Stop\+Time\+Decrease\+Type}}
+\begin{DoxyCompactList}\small\item\em H\+OW S\+T\+OP T\+I\+ME IS D\+E\+C\+R\+E\+A\+S\+I\+NG (Linear, exponentially, static) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a17ca7199b46ca5929ba07e9b443b5ba8}{Tap\+Amount\+Of\+Interactions}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a764379a01a7011394b2ff75f0264586e}{Tap\+Amount\+Of\+Interactions\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT (eg. Required taps = Tap + Variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_af7de0dc917f8e3ff5f5882387b7a6ee0}{Swipe\+Amount\+Of\+Interactions}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO S\+W\+I\+PE T\+HE O\+B\+J\+E\+CT \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a08b2d76702fac89b9b813638e337a38c}{Swipe\+Amount\+Of\+Interactions\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO S\+W\+I\+PE T\+HE O\+B\+J\+E\+CT (eg. Required swipes = Swipe + Variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a5ed2c41114df5d92ab87262cc19edcc0}{Circle\+Amount\+Of\+Interactions}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a51e095de2796a9c8350c71487499fba1}{Circle\+Amount\+Of\+Interactions\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO C\+I\+R\+C\+LE T\+HE O\+B\+J\+E\+CT (eg. Required circles = Circle + Variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a0e439292dab7ae19602fe2467c9edf7d}{Tap\+Chance}}
+\begin{DoxyCompactList}\small\item\em L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A T\+AP C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_ae54a8cf448d0c324226bc826d7a54c7c}{Swipe\+Chance}}
+\begin{DoxyCompactList}\small\item\em L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A S\+W\+I\+PE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a233ef8fd9ce6cf594c7d8b7f7f376a14}{Circle\+Chance}}
+\begin{DoxyCompactList}\small\item\em L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A C\+I\+R\+C\+LE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_af88526261cec22d23a0e30f7f125c3cc}{Spacing}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+A\+NY S\+P\+A\+C\+ES T\+H\+E\+RE H\+AS TO BE B\+E\+F\+O\+RE S\+P\+A\+W\+N\+I\+NG A N\+EW C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_aacec1cbafaf003db769e4a95d2fcd572}{Spacing\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY S\+P\+A\+C\+ES T\+H\+E\+RE H\+AS TO BE B\+E\+F\+O\+RE S\+P\+A\+W\+N\+I\+NG A N\+EW C\+H\+U\+NK (eg. Required spaces = Space + Variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a3b600f14826bfae1ae66ad147d745d92}{Tap\+Gain}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_aa5da35f1fd0062f3c13fedef6fae319e}{Tap\+Gain\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK ( money gained = tap + variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a209426d09d371d0e7cb103fd9be21ebd}{Swipe\+Gain}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_aa8919f57f0ae9b45195bb94a77005fae}{Swipe\+Gain\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK ( money gained = S\+W\+I\+PE + variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a03084f1d8ce4cd18de4abf7513a6a234}{Circle\+Gain}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a2aa1521984253e6d2055a33d7480c3c3}{Circle\+Gain\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK ( money gained = C\+I\+R\+C\+LE + variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a8618b3d78248479cdb2cbe72ad532e63}{Tap\+Lost}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_af0958edc9b6ac470c51ebe9c3cefdc1b}{Tap\+Lost\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK ( money lost = tap + variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a38dc73618aa6e88ed86d3368601f1003}{Swipe\+Lost}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a258f0b41835d5a5f41de82ba7ab4b0ae}{Swipe\+Lost\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK ( money lost = S\+W\+I\+PE + variance) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_aec7dc85f9abfe20d21f421681fe41d0b}{Circle\+Lost}}
+\begin{DoxyCompactList}\small\item\em H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_float_reference}{Float\+Reference}} \mbox{\hyperlink{class_difficulty_setting_a89980980292e3515f2ea6e3bc53743cb}{Circle\+Lost\+Variance}}
+\begin{DoxyCompactList}\small\item\em V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK ( money lost = C\+I\+R\+C\+LE + variance) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_difficulty_setting_a0928bd77d5b87360db3fb725f23452b3}\label{class_difficulty_setting_a0928bd77d5b87360db3fb725f23452b3}} 
+\index{DifficultySetting@{DifficultySetting}!BeltSpeed@{BeltSpeed}}
+\index{BeltSpeed@{BeltSpeed}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{BeltSpeed}{BeltSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Belt\+Speed}
+
+
+
+H\+OW F\+A\+ST T\+HE B\+E\+LT IS G\+O\+I\+NG 
+
+\mbox{\Hypertarget{class_difficulty_setting_afe5a1c9f9ef24301555f69dd6bad5965}\label{class_difficulty_setting_afe5a1c9f9ef24301555f69dd6bad5965}} 
+\index{DifficultySetting@{DifficultySetting}!BeltSpeedIncreaseAmount@{BeltSpeedIncreaseAmount}}
+\index{BeltSpeedIncreaseAmount@{BeltSpeedIncreaseAmount}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{BeltSpeedIncreaseAmount}{BeltSpeedIncreaseAmount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Belt\+Speed\+Increase\+Amount}
+
+
+
+H\+OW M\+U\+CH T\+HE B\+E\+LT S\+P\+E\+ED IS I\+N\+C\+R\+E\+A\+S\+I\+NG BY (Amount to apply each second/millisecond/etc., depending on increase type) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a7436dc1e0c6b2727c42ada6da1632012}\label{class_difficulty_setting_a7436dc1e0c6b2727c42ada6da1632012}} 
+\index{DifficultySetting@{DifficultySetting}!BeltSpeedIncreaseStart@{BeltSpeedIncreaseStart}}
+\index{BeltSpeedIncreaseStart@{BeltSpeedIncreaseStart}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{BeltSpeedIncreaseStart}{BeltSpeedIncreaseStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Belt\+Speed\+Increase\+Start}
+
+
+
+W\+H\+EN T\+HE B\+E\+LT S\+P\+E\+ED S\+H\+O\+U\+LD S\+T\+A\+RT TO I\+N\+C\+R\+E\+A\+SE 
+
+\mbox{\Hypertarget{class_difficulty_setting_a0645b9e17c8a5c16007f4e89420d075b}\label{class_difficulty_setting_a0645b9e17c8a5c16007f4e89420d075b}} 
+\index{DifficultySetting@{DifficultySetting}!BeltSpeedIncreaseType@{BeltSpeedIncreaseType}}
+\index{BeltSpeedIncreaseType@{BeltSpeedIncreaseType}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{BeltSpeedIncreaseType}{BeltSpeedIncreaseType}}
+{\footnotesize\ttfamily Increase\+Type Difficulty\+Setting.\+Belt\+Speed\+Increase\+Type}
+
+
+
+H\+OW B\+E\+LT S\+P\+E\+ED IS I\+N\+C\+R\+E\+A\+S\+I\+NG 
+
+\mbox{\Hypertarget{class_difficulty_setting_a5ed2c41114df5d92ab87262cc19edcc0}\label{class_difficulty_setting_a5ed2c41114df5d92ab87262cc19edcc0}} 
+\index{DifficultySetting@{DifficultySetting}!CircleAmountOfInteractions@{CircleAmountOfInteractions}}
+\index{CircleAmountOfInteractions@{CircleAmountOfInteractions}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleAmountOfInteractions}{CircleAmountOfInteractions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Amount\+Of\+Interactions}
+
+
+
+H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT 
+
+\mbox{\Hypertarget{class_difficulty_setting_a51e095de2796a9c8350c71487499fba1}\label{class_difficulty_setting_a51e095de2796a9c8350c71487499fba1}} 
+\index{DifficultySetting@{DifficultySetting}!CircleAmountOfInteractionsVariance@{CircleAmountOfInteractionsVariance}}
+\index{CircleAmountOfInteractionsVariance@{CircleAmountOfInteractionsVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleAmountOfInteractionsVariance}{CircleAmountOfInteractionsVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Amount\+Of\+Interactions\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO C\+I\+R\+C\+LE T\+HE O\+B\+J\+E\+CT (eg. Required circles = Circle + Variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a233ef8fd9ce6cf594c7d8b7f7f376a14}\label{class_difficulty_setting_a233ef8fd9ce6cf594c7d8b7f7f376a14}} 
+\index{DifficultySetting@{DifficultySetting}!CircleChance@{CircleChance}}
+\index{CircleChance@{CircleChance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleChance}{CircleChance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Chance}
+
+
+
+L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A C\+I\+R\+C\+LE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a03084f1d8ce4cd18de4abf7513a6a234}\label{class_difficulty_setting_a03084f1d8ce4cd18de4abf7513a6a234}} 
+\index{DifficultySetting@{DifficultySetting}!CircleGain@{CircleGain}}
+\index{CircleGain@{CircleGain}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleGain}{CircleGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Gain}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a2aa1521984253e6d2055a33d7480c3c3}\label{class_difficulty_setting_a2aa1521984253e6d2055a33d7480c3c3}} 
+\index{DifficultySetting@{DifficultySetting}!CircleGainVariance@{CircleGainVariance}}
+\index{CircleGainVariance@{CircleGainVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleGainVariance}{CircleGainVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Gain\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK ( money gained = C\+I\+R\+C\+LE + variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_aec7dc85f9abfe20d21f421681fe41d0b}\label{class_difficulty_setting_aec7dc85f9abfe20d21f421681fe41d0b}} 
+\index{DifficultySetting@{DifficultySetting}!CircleLost@{CircleLost}}
+\index{CircleLost@{CircleLost}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleLost}{CircleLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Lost}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a89980980292e3515f2ea6e3bc53743cb}\label{class_difficulty_setting_a89980980292e3515f2ea6e3bc53743cb}} 
+\index{DifficultySetting@{DifficultySetting}!CircleLostVariance@{CircleLostVariance}}
+\index{CircleLostVariance@{CircleLostVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{CircleLostVariance}{CircleLostVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Circle\+Lost\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG C\+I\+R\+C\+LE C\+H\+U\+NK ( money lost = C\+I\+R\+C\+LE + variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_ab7c866cbc7f5d16c3b8fce3be70de26e}\label{class_difficulty_setting_ab7c866cbc7f5d16c3b8fce3be70de26e}} 
+\index{DifficultySetting@{DifficultySetting}!LevelLength@{LevelLength}}
+\index{LevelLength@{LevelLength}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{LevelLength}{LevelLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Level\+Length}
+
+
+
+H\+OW L\+O\+NG A L\+E\+V\+EL IS (H\+OW M\+A\+NY S\+E\+C\+O\+N\+DS) 
+
+\mbox{\Hypertarget{class_difficulty_setting_af88526261cec22d23a0e30f7f125c3cc}\label{class_difficulty_setting_af88526261cec22d23a0e30f7f125c3cc}} 
+\index{DifficultySetting@{DifficultySetting}!Spacing@{Spacing}}
+\index{Spacing@{Spacing}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{Spacing}{Spacing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Spacing}
+
+
+
+H\+OW M\+A\+NY S\+P\+A\+C\+ES T\+H\+E\+RE H\+AS TO BE B\+E\+F\+O\+RE S\+P\+A\+W\+N\+I\+NG A N\+EW C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_aacec1cbafaf003db769e4a95d2fcd572}\label{class_difficulty_setting_aacec1cbafaf003db769e4a95d2fcd572}} 
+\index{DifficultySetting@{DifficultySetting}!SpacingVariance@{SpacingVariance}}
+\index{SpacingVariance@{SpacingVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SpacingVariance}{SpacingVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Spacing\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY S\+P\+A\+C\+ES T\+H\+E\+RE H\+AS TO BE B\+E\+F\+O\+RE S\+P\+A\+W\+N\+I\+NG A N\+EW C\+H\+U\+NK (eg. Required spaces = Space + Variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a9560a924aabf776c97aecacafd68409d}\label{class_difficulty_setting_a9560a924aabf776c97aecacafd68409d}} 
+\index{DifficultySetting@{DifficultySetting}!StopTime@{StopTime}}
+\index{StopTime@{StopTime}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{StopTime}{StopTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Stop\+Time}
+
+
+
+H\+OW L\+O\+NG T\+HE O\+B\+J\+E\+CT W\+I\+LL S\+T\+OP IN F\+R\+O\+NT OF C\+H\+A\+R\+A\+C\+T\+ER 
+
+\mbox{\Hypertarget{class_difficulty_setting_afafb236eef0d4688f17e1c4daee41563}\label{class_difficulty_setting_afafb236eef0d4688f17e1c4daee41563}} 
+\index{DifficultySetting@{DifficultySetting}!StopTimeDecreaseAmount@{StopTimeDecreaseAmount}}
+\index{StopTimeDecreaseAmount@{StopTimeDecreaseAmount}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{StopTimeDecreaseAmount}{StopTimeDecreaseAmount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Stop\+Time\+Decrease\+Amount}
+
+
+
+H\+OW M\+U\+CH T\+HE S\+T\+OP T\+I\+ME IS D\+E\+C\+R\+E\+A\+S\+I\+NG BY (Amount to apply each second/millisecond/etc., depending on decrease type) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a460e5e145ac7913b5ff3a37a5b132334}\label{class_difficulty_setting_a460e5e145ac7913b5ff3a37a5b132334}} 
+\index{DifficultySetting@{DifficultySetting}!StopTimeDecreaseStart@{StopTimeDecreaseStart}}
+\index{StopTimeDecreaseStart@{StopTimeDecreaseStart}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{StopTimeDecreaseStart}{StopTimeDecreaseStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Stop\+Time\+Decrease\+Start}
+
+
+
+W\+H\+EN T\+HE S\+T\+OP T\+I\+ME S\+H\+O\+U\+LD S\+T\+A\+RT TO D\+E\+C\+R\+E\+A\+SE 
+
+\mbox{\Hypertarget{class_difficulty_setting_a463b8290e78b4555fa8e4d12e9a53277}\label{class_difficulty_setting_a463b8290e78b4555fa8e4d12e9a53277}} 
+\index{DifficultySetting@{DifficultySetting}!StopTimeDecreaseType@{StopTimeDecreaseType}}
+\index{StopTimeDecreaseType@{StopTimeDecreaseType}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{StopTimeDecreaseType}{StopTimeDecreaseType}}
+{\footnotesize\ttfamily Increase\+Type Difficulty\+Setting.\+Stop\+Time\+Decrease\+Type}
+
+
+
+H\+OW S\+T\+OP T\+I\+ME IS D\+E\+C\+R\+E\+A\+S\+I\+NG (Linear, exponentially, static) 
+
+\mbox{\Hypertarget{class_difficulty_setting_af7de0dc917f8e3ff5f5882387b7a6ee0}\label{class_difficulty_setting_af7de0dc917f8e3ff5f5882387b7a6ee0}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeAmountOfInteractions@{SwipeAmountOfInteractions}}
+\index{SwipeAmountOfInteractions@{SwipeAmountOfInteractions}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeAmountOfInteractions}{SwipeAmountOfInteractions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Amount\+Of\+Interactions}
+
+
+
+H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO S\+W\+I\+PE T\+HE O\+B\+J\+E\+CT 
+
+\mbox{\Hypertarget{class_difficulty_setting_a08b2d76702fac89b9b813638e337a38c}\label{class_difficulty_setting_a08b2d76702fac89b9b813638e337a38c}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeAmountOfInteractionsVariance@{SwipeAmountOfInteractionsVariance}}
+\index{SwipeAmountOfInteractionsVariance@{SwipeAmountOfInteractionsVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeAmountOfInteractionsVariance}{SwipeAmountOfInteractionsVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Amount\+Of\+Interactions\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO S\+W\+I\+PE T\+HE O\+B\+J\+E\+CT (eg. Required swipes = Swipe + Variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_ae54a8cf448d0c324226bc826d7a54c7c}\label{class_difficulty_setting_ae54a8cf448d0c324226bc826d7a54c7c}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeChance@{SwipeChance}}
+\index{SwipeChance@{SwipeChance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeChance}{SwipeChance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Chance}
+
+
+
+L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A S\+W\+I\+PE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a209426d09d371d0e7cb103fd9be21ebd}\label{class_difficulty_setting_a209426d09d371d0e7cb103fd9be21ebd}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeGain@{SwipeGain}}
+\index{SwipeGain@{SwipeGain}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeGain}{SwipeGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Gain}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_aa8919f57f0ae9b45195bb94a77005fae}\label{class_difficulty_setting_aa8919f57f0ae9b45195bb94a77005fae}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeGainVariance@{SwipeGainVariance}}
+\index{SwipeGainVariance@{SwipeGainVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeGainVariance}{SwipeGainVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Gain\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK ( money gained = S\+W\+I\+PE + variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a38dc73618aa6e88ed86d3368601f1003}\label{class_difficulty_setting_a38dc73618aa6e88ed86d3368601f1003}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeLost@{SwipeLost}}
+\index{SwipeLost@{SwipeLost}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeLost}{SwipeLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Lost}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a258f0b41835d5a5f41de82ba7ab4b0ae}\label{class_difficulty_setting_a258f0b41835d5a5f41de82ba7ab4b0ae}} 
+\index{DifficultySetting@{DifficultySetting}!SwipeLostVariance@{SwipeLostVariance}}
+\index{SwipeLostVariance@{SwipeLostVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{SwipeLostVariance}{SwipeLostVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Swipe\+Lost\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG S\+W\+I\+PE C\+H\+U\+NK ( money lost = S\+W\+I\+PE + variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a17ca7199b46ca5929ba07e9b443b5ba8}\label{class_difficulty_setting_a17ca7199b46ca5929ba07e9b443b5ba8}} 
+\index{DifficultySetting@{DifficultySetting}!TapAmountOfInteractions@{TapAmountOfInteractions}}
+\index{TapAmountOfInteractions@{TapAmountOfInteractions}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapAmountOfInteractions}{TapAmountOfInteractions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Amount\+Of\+Interactions}
+
+
+
+H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT 
+
+\mbox{\Hypertarget{class_difficulty_setting_a764379a01a7011394b2ff75f0264586e}\label{class_difficulty_setting_a764379a01a7011394b2ff75f0264586e}} 
+\index{DifficultySetting@{DifficultySetting}!TapAmountOfInteractionsVariance@{TapAmountOfInteractionsVariance}}
+\index{TapAmountOfInteractionsVariance@{TapAmountOfInteractionsVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapAmountOfInteractionsVariance}{TapAmountOfInteractionsVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Amount\+Of\+Interactions\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+A\+NY T\+I\+M\+ES P\+L\+A\+Y\+ER H\+AS TO T\+AP T\+HE O\+B\+J\+E\+CT (eg. Required taps = Tap + Variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a0e439292dab7ae19602fe2467c9edf7d}\label{class_difficulty_setting_a0e439292dab7ae19602fe2467c9edf7d}} 
+\index{DifficultySetting@{DifficultySetting}!TapChance@{TapChance}}
+\index{TapChance@{TapChance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapChance}{TapChance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Chance}
+
+
+
+L\+I\+K\+E\+L\+I\+H\+O\+OD OF S\+P\+A\+W\+N\+I\+NG A T\+AP C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_a3b600f14826bfae1ae66ad147d745d92}\label{class_difficulty_setting_a3b600f14826bfae1ae66ad147d745d92}} 
+\index{DifficultySetting@{DifficultySetting}!TapGain@{TapGain}}
+\index{TapGain@{TapGain}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapGain}{TapGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Gain}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_aa5da35f1fd0062f3c13fedef6fae319e}\label{class_difficulty_setting_aa5da35f1fd0062f3c13fedef6fae319e}} 
+\index{DifficultySetting@{DifficultySetting}!TapGainVariance@{TapGainVariance}}
+\index{TapGainVariance@{TapGainVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapGainVariance}{TapGainVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Gain\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU G\+A\+IN F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK ( money gained = tap + variance) 
+
+\mbox{\Hypertarget{class_difficulty_setting_a8618b3d78248479cdb2cbe72ad532e63}\label{class_difficulty_setting_a8618b3d78248479cdb2cbe72ad532e63}} 
+\index{DifficultySetting@{DifficultySetting}!TapLost@{TapLost}}
+\index{TapLost@{TapLost}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapLost}{TapLost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Lost}
+
+
+
+H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK 
+
+\mbox{\Hypertarget{class_difficulty_setting_af0958edc9b6ac470c51ebe9c3cefdc1b}\label{class_difficulty_setting_af0958edc9b6ac470c51ebe9c3cefdc1b}} 
+\index{DifficultySetting@{DifficultySetting}!TapLostVariance@{TapLostVariance}}
+\index{TapLostVariance@{TapLostVariance}!DifficultySetting@{DifficultySetting}}
+\doxysubsubsection{\texorpdfstring{TapLostVariance}{TapLostVariance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_float_reference}{Float\+Reference}} Difficulty\+Setting.\+Tap\+Lost\+Variance}
+
+
+
+V\+A\+R\+I\+A\+N\+CE TO H\+OW M\+U\+CH M\+O\+N\+EY Y\+OU L\+O\+ST F\+R\+OM P\+R\+O\+C\+E\+S\+S\+I\+NG T\+AP C\+H\+U\+NK ( money lost = tap + variance) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Git\+Hub/\+Graduation\+Game/\+Assets/\+Scripts/\+Scriptable\+Objects/Difficulty\+Setting.\+cs\end{DoxyCompactItemize}

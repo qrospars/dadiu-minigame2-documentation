@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['simplecameracontroller_11',['SimpleCameraController',['../class_unity_template_projects_1_1_simple_camera_controller.html',1,'UnityTemplateProjects']]],
-  ['swipemanager_12',['SwipeManager',['../class_swipe_manager.html',1,'']]]
+  ['levellength_36',['LevelLength',['../class_difficulty_setting.html#ab7c866cbc7f5d16c3b8fce3be70de26e',1,'DifficultySetting']]],
+  ['loadingsceneintegration_37',['LoadingSceneIntegration',['../class_loading_scene_integration.html',1,'']]],
+  ['loadplayerprefs_38',['LoadPlayerPrefs',['../class_load_player_prefs.html',1,'']]]
 ];

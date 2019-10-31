@@ -29,6 +29,19 @@ var menudata={children:[
 {text:"Class Index",url:"classes.html"},
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html"},
+{text:"All",url:"functions.html",children:[
+{text:"b",url:"functions.html#index_b"},
+{text:"c",url:"functions.html#index_c"},
+{text:"d",url:"functions.html#index_d"},
+{text:"f",url:"functions.html#index_f"},
+{text:"l",url:"functions.html#index_l"},
+{text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"}]},
 {text:"Functions",url:"functions_func.html"},
+{text:"Variables",url:"functions_vars.html",children:[
+{text:"b",url:"functions_vars.html#index_b"},
+{text:"c",url:"functions_vars.html#index_c"},
+{text:"l",url:"functions_vars.html#index_l"},
+{text:"s",url:"functions_vars.html#index_s"},
+{text:"t",url:"functions_vars.html#index_t"}]},
 {text:"Properties",url:"functions_prop.html"}]}]}]}
