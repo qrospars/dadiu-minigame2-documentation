@@ -2,7 +2,7 @@
 /* New light dark background #3 2 3 6 3 d */
 /* Dark background: #d f e 5 f 2; */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
 /* TOP MENU */
 .sm-dox {
 	background: #313131 !important;
@@ -366,6 +366,10 @@ td.memItemLeft, td.memItemRight {
 /*********************************************/
 .titlearea {
 	border-bottom: 1px solid #32363d;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif !important; 
 }
 
 /*********************************************/
