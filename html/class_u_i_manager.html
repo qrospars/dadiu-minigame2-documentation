@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DADIU Mini Game Production 2: UIManager Class Reference</title>
+<title>DADIU Graduation Game: UIManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -13,6 +13,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -21,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">DADIU Mini Game Production 2
+   <div id="projectname">DADIU Graduation Game
    </div>
   </td>
  </tr>
@@ -63,7 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_u_i_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UIManager Class Reference</div>  </div>
@@ -73,41 +74,35 @@ $(function() {
 Inheritance diagram for UIManager:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_u_i_manager.png" alt=""/>
- </div></div>
+  <img src="class_u_i_manager.png" usemap="#UIManager_map" alt=""/>
+  <map id="UIManager_map" name="UIManager_map">
+<area href="interface_i_updateable.html" title="Interface the updateable class should inherit." alt="IUpdateable" shape="rect" coords="112,0,214,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bd6b48b13b9e14e6292e4b713f59584"><td class="memItemLeft" align="right" valign="top"><a id="a2bd6b48b13b9e14e6292e4b713f59584"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
-<tr class="separator:a2bd6b48b13b9e14e6292e4b713f59584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ccc1359af7af88176d4314bdf0f517e"><td class="memItemLeft" align="right" valign="top"><a id="a8ccc1359af7af88176d4314bdf0f517e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowLevelCompletePanel</b> ()</td></tr>
-<tr class="separator:a8ccc1359af7af88176d4314bdf0f517e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d27192a3040060abe307c1684dc2abd"><td class="memItemLeft" align="right" valign="top"><a id="a7d27192a3040060abe307c1684dc2abd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowPauseMenu</b> ()</td></tr>
-<tr class="separator:a7d27192a3040060abe307c1684dc2abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b096e69057893b7797e075447ee16e"><td class="memItemLeft" align="right" valign="top"><a id="ad0b096e69057893b7797e075447ee16e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLanguage</b> ()</td></tr>
-<tr class="separator:ad0b096e69057893b7797e075447ee16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122b872c5912964602e98d7011dee1f0"><td class="memItemLeft" align="right" valign="top"><a id="a122b872c5912964602e98d7011dee1f0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadCredits</b> ()</td></tr>
-<tr class="separator:a122b872c5912964602e98d7011dee1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3432bef6886990be4cf5dcddf61d4212"><td class="memItemLeft" align="right" valign="top"><a id="a3432bef6886990be4cf5dcddf61d4212"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadMainMenu</b> ()</td></tr>
-<tr class="separator:a3432bef6886990be4cf5dcddf61d4212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebcbeabaab411c6309ed25d617e036d9"><td class="memItemLeft" align="right" valign="top"><a id="aebcbeabaab411c6309ed25d617e036d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RestartLevel</b> ()</td></tr>
-<tr class="separator:aebcbeabaab411c6309ed25d617e036d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e092f39ae3ca11fd392f93a40844cf4"><td class="memItemLeft" align="right" valign="top"><a id="a9e092f39ae3ca11fd392f93a40844cf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
+<tr class="separator:a9e092f39ae3ca11fd392f93a40844cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671473bc7b35ae3f8efa9785e6d1f678"><td class="memItemLeft" align="right" valign="top"><a id="a671473bc7b35ae3f8efa9785e6d1f678"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td></tr>
+<tr class="separator:a671473bc7b35ae3f8efa9785e6d1f678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a5875264ab5094d284f7c08c7fd892"><td class="memItemLeft" align="right" valign="top"><a id="ad6a5875264ab5094d284f7c08c7fd892"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
+<tr class="separator:ad6a5875264ab5094d284f7c08c7fd892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0624dc37dd1d1a5fe9c6176ef53f73ba"><td class="memItemLeft" align="right" valign="top"><a id="a0624dc37dd1d1a5fe9c6176ef53f73ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IStart</b> ()</td></tr>
+<tr class="separator:a0624dc37dd1d1a5fe9c6176ef53f73ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a006246dc7fcecbe2387d70731191d4f6"><td class="memItemLeft" align="right" valign="top"><a id="a006246dc7fcecbe2387d70731191d4f6"></a>
-static <a class="el" href="class_u_i_manager.html">UIManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b></td></tr>
-<tr class="separator:a006246dc7fcecbe2387d70731191d4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad1281a64d87d6281e57ed8c2f0e91900"><td class="memItemLeft" align="right" valign="top"><a id="ad1281a64d87d6281e57ed8c2f0e91900"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>ChunkSpawnerGameObject</b></td></tr>
+<tr class="separator:ad1281a64d87d6281e57ed8c2f0e91900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/quentinrospars/Documents/Subversion/dadiu-minigame2/Assets/Scripts/UIManager.cs</li>
+<li>/Users/quentinrospars/Documents/GitHub/GraduationGame/Assets/Scripts/WorkMechanic/UIManager.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
