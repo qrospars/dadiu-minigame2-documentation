@@ -1,0 +1,104 @@
+\hypertarget{class_mo_ma_1_1_animation_player}{}\doxysection{Mo\+Ma.\+Animation\+Player Class Reference}
+\label{class_mo_ma_1_1_animation_player}\index{MoMa.AnimationPlayer@{MoMa.AnimationPlayer}}
+
+
+This class is holding the animation data. It should be attached to any character that needs to be data-\/driven animated Only the hips should be set manually!  
+
+
+Inheritance diagram for Mo\+Ma.\+Animation\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mo_ma_1_1_animation_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_a1fddc27bf844942cdaa2aedde78f5c62}\label{class_mo_ma_1_1_animation_player_a1fddc27bf844942cdaa2aedde78f5c62}} 
+void {\bfseries Preview} (int start\+Frame, int end\+Frame, int animation\+Id)
+\item 
+void \mbox{\hyperlink{class_mo_ma_1_1_animation_player_a23bfdf44f3a16b329da779d1f8fe70f2}{Play\+Animation}} (int start\+Frame, int animation\+Id=-\/1, \mbox{\hyperlink{class_ref}{Ref}}$<$ bool $>$ reaction\+Ended=null)
+\begin{DoxyCompactList}\small\item\em This is the main method if you want to play an animation. \end{DoxyCompactList}\item 
+I\+Enumerator \mbox{\hyperlink{class_mo_ma_1_1_animation_player_a48f3dbdc2aae474377a32ee90c36ff10}{Play\+Animation\+Preview}} (int start\+Frame, int end\+Frame=-\/1, \mbox{\hyperlink{class_ref}{Ref}}$<$ bool $>$ reaction\+Ended=null)
+\begin{DoxyCompactList}\small\item\em This is a coroutine used by Play\+Animation to play the animation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_ae6522561e07fd52cdddd37540bfe9557}\label{class_mo_ma_1_1_animation_player_ae6522561e07fd52cdddd37540bfe9557}} 
+Transform {\bfseries hips}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_affa5992a9b0b985c5117db878c044866}\label{class_mo_ma_1_1_animation_player_affa5992a9b0b985c5117db878c044866}} 
+\mbox{\hyperlink{class_mo_ma_1_1_animation_data}{Animation\+Data}} {\bfseries current\+Animation}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_aec3e4e96b90697bae358c9bce9984183}\label{class_mo_ma_1_1_animation_player_aec3e4e96b90697bae358c9bce9984183}} 
+int {\bfseries current\+Frame}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_ae12d699f75cff90d70fe5bcfcb88e6a5}\label{class_mo_ma_1_1_animation_player_ae12d699f75cff90d70fe5bcfcb88e6a5}} 
+int {\bfseries preview\+Frame}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_ae7b5665c63d5bd7aee9d824d5ac669d2}\label{class_mo_ma_1_1_animation_player_ae7b5665c63d5bd7aee9d824d5ac669d2}} 
+double {\bfseries elapsed\+Ms}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_ac5f65f5d1fbc5b453e6e6cae7bd91e40}\label{class_mo_ma_1_1_animation_player_ac5f65f5d1fbc5b453e6e6cae7bd91e40}} 
+\mbox{\hyperlink{class_mo_ma_1_1_trajectory}{Trajectory}} {\bfseries current\+Feature\+Vector}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_af34be40e6f82f62fe0e2b39bf33183f8}\label{class_mo_ma_1_1_animation_player_af34be40e6f82f62fe0e2b39bf33183f8}} 
+Dictionary$<$ animation\+Id, Dictionary$<$ frame\+Index, byte $>$ $>$ {\bfseries recently\+Played\+Frames\+Dict}
+\item 
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_a2f2449713ea3c793f5a2b57a20ceb077}\label{class_mo_ma_1_1_animation_player_a2f2449713ea3c793f5a2b57a20ceb077}} 
+Queue$<$ \mbox{\hyperlink{struct_mo_ma_1_1_frame_identifier}{Frame\+Identifier}} $>$ {\bfseries recently\+Played\+Frames} = new Queue$<$\mbox{\hyperlink{struct_mo_ma_1_1_frame_identifier}{Frame\+Identifier}}$>$(100)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is holding the animation data. It should be attached to any character that needs to be data-\/driven animated Only the hips should be set manually! 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_a23bfdf44f3a16b329da779d1f8fe70f2}\label{class_mo_ma_1_1_animation_player_a23bfdf44f3a16b329da779d1f8fe70f2}} 
+\index{MoMa.AnimationPlayer@{MoMa.AnimationPlayer}!PlayAnimation@{PlayAnimation}}
+\index{PlayAnimation@{PlayAnimation}!MoMa.AnimationPlayer@{MoMa.AnimationPlayer}}
+\doxysubsubsection{\texorpdfstring{PlayAnimation()}{PlayAnimation()}}
+{\footnotesize\ttfamily void Mo\+Ma.\+Animation\+Player.\+Play\+Animation (\begin{DoxyParamCaption}\item[{int}]{start\+Frame,  }\item[{int}]{animation\+Id = {\ttfamily -\/1},  }\item[{\mbox{\hyperlink{class_ref}{Ref}}$<$ bool $>$}]{reaction\+Ended = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is the main method if you want to play an animation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Frame} & Where the animation should start\\
+\hline
+{\em animation\+Id} & Optional parameter\+: If you want to change the current animation\\
+\hline
+{\em reaction\+Ended} & Optional parameter\+: If you want to know if the animation has ended (to use as a callback)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mo_ma_1_1_animation_player_a48f3dbdc2aae474377a32ee90c36ff10}\label{class_mo_ma_1_1_animation_player_a48f3dbdc2aae474377a32ee90c36ff10}} 
+\index{MoMa.AnimationPlayer@{MoMa.AnimationPlayer}!PlayAnimationPreview@{PlayAnimationPreview}}
+\index{PlayAnimationPreview@{PlayAnimationPreview}!MoMa.AnimationPlayer@{MoMa.AnimationPlayer}}
+\doxysubsubsection{\texorpdfstring{PlayAnimationPreview()}{PlayAnimationPreview()}}
+{\footnotesize\ttfamily I\+Enumerator Mo\+Ma.\+Animation\+Player.\+Play\+Animation\+Preview (\begin{DoxyParamCaption}\item[{int}]{start\+Frame,  }\item[{int}]{end\+Frame = {\ttfamily -\/1},  }\item[{\mbox{\hyperlink{class_ref}{Ref}}$<$ bool $>$}]{reaction\+Ended = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This is a coroutine used by Play\+Animation to play the animation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Frame} & \\
+\hline
+{\em end\+Frame} & \\
+\hline
+{\em reaction\+Ended} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Git\+Hub/\+Graduation\+Game/\+Assets/\+Scripts/\+Mo\+Ma/Animation\+Player.\+cs\end{DoxyCompactItemize}

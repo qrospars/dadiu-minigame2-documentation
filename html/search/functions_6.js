@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['savestate_135',['SaveState',['../class_save_manager.html#abc1666a5292da2b64d053fc9e36a9c78',1,'SaveManager']]]
+  ['setpostheight_215',['SetPostHeight',['../class_social_feed_post_init.html#a4e703ad20807f18177097b490c6bcc5c',1,'SocialFeedPostInit.SetPostHeight()'],['../class_social_feed_video_post.html#a9426b3379d9af95ea1f6ab5ae57feab8',1,'SocialFeedVideoPost.SetPostHeight()']]]
 ];

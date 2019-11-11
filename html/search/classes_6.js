@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loadingsceneintegration_112',['LoadingSceneIntegration',['../class_loading_scene_integration.html',1,'']]],
-  ['loadplayerprefs_113',['LoadPlayerPrefs',['../class_load_player_prefs.html',1,'']]]
+  ['intreference_151',['IntReference',['../class_int_reference.html',1,'']]],
+  ['intvariable_152',['IntVariable',['../class_int_variable.html',1,'']]],
+  ['iupdateable_153',['IUpdateable',['../interface_i_updateable.html',1,'']]]
 ];

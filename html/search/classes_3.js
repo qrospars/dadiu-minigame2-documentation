@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['floatreference_101',['FloatReference',['../class_float_reference.html',1,'']]],
-  ['floatvariable_102',['FloatVariable',['../class_float_variable.html',1,'']]]
+  ['ddol_136',['DDOL',['../class_d_d_o_l.html',1,'']]],
+  ['despawnchunk_137',['DespawnChunk',['../class_big_bool_1_1_graduation_game_1_1_actions_1_1_despawn_chunk.html',1,'BigBool::GraduationGame::Actions']]],
+  ['difficultysetting_138',['DifficultySetting',['../class_difficulty_setting.html',1,'']]],
+  ['displayfollowercount_139',['DisplayFollowerCount',['../class_display_follower_count.html',1,'']]]
 ];
