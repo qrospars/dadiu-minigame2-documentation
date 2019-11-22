@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class will store all the needed information for making a video preview scene in the social feed. For every video post in the social feed, a render texture will need to be created. The animations file can be found in the folder "Ressources/AnimationData/Animations/"  
+<p>This class will store all the needed information for making a video preview scene in the social feed. The animations file can be found in the folder "Ressources/AnimationData/Animations/"  
  <a href="class_video_post_manager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for VideoPostManager:</div>
@@ -86,7 +86,7 @@ Inheritance diagram for VideoPostManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a99bcec7bc0548262231cc0b3a10e5a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_post_manager.html#a99bcec7bc0548262231cc0b3a10e5a5f">PlayReaction</a> ()</td></tr>
-<tr class="memdesc:a99bcec7bc0548262231cc0b3a10e5a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by <a class="el" href="class_social_feed_video_post.html">SocialFeedVideoPost</a> and play the reaction animation when the event is received. It uses Motion Matching internally, fining a best frame to interpolate to, then creates a new blended animation to play.  <a href="class_video_post_manager.html#a99bcec7bc0548262231cc0b3a10e5a5f">More...</a><br /></td></tr>
+<tr class="memdesc:a99bcec7bc0548262231cc0b3a10e5a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by <a class="el" href="class_social_feed_video_post.html">SocialFeedVideoPost</a> and play the reaction animation when the event is received. It uses Motion Matching internally, finding a best frame to interpolate to, then creates a new blended animation to play.  <a href="class_video_post_manager.html#a99bcec7bc0548262231cc0b3a10e5a5f">More...</a><br /></td></tr>
 <tr class="separator:a99bcec7bc0548262231cc0b3a10e5a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec27b43a844e3bbe39048dd0bf727cdf"><td class="memItemLeft" align="right" valign="top"><a id="aec27b43a844e3bbe39048dd0bf727cdf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
@@ -103,12 +103,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7cfaf0d31d8d06edf512045a7aba6124"><td class="memItemLeft" align="right" valign="top"><a id="a7cfaf0d31d8d06edf512045a7aba6124"></a>
 Camera&#160;</td><td class="memItemRight" valign="bottom"><b>camera</b></td></tr>
 <tr class="separator:a7cfaf0d31d8d06edf512045a7aba6124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c94df499afdacddfbd89a3d01fde4f"><td class="memItemLeft" align="right" valign="top"><a id="a59c94df499afdacddfbd89a3d01fde4f"></a>
-Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>ViewSprite</b></td></tr>
-<tr class="separator:a59c94df499afdacddfbd89a3d01fde4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53c11b2e5f7c25042efa3f5a69df975"><td class="memItemLeft" align="right" valign="top"><a id="ae53c11b2e5f7c25042efa3f5a69df975"></a>
-RenderTexture&#160;</td><td class="memItemRight" valign="bottom"><b>renderTexture</b></td></tr>
-<tr class="separator:ae53c11b2e5f7c25042efa3f5a69df975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c419abb0e9c3f4db8f54ecef080c573"><td class="memItemLeft" align="right" valign="top"><a id="a0c419abb0e9c3f4db8f54ecef080c573"></a>
+RenderTexture&#160;</td><td class="memItemRight" valign="bottom"><b>RenderTexture</b></td></tr>
+<tr class="separator:a0c419abb0e9c3f4db8f54ecef080c573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b6923549fb31c4c0a20fac73889a00"><td class="memItemLeft" align="right" valign="top"><a id="a15b6923549fb31c4c0a20fac73889a00"></a>
 TextAsset&#160;</td><td class="memItemRight" valign="bottom"><b>loopAnimation</b></td></tr>
 <tr class="separator:a15b6923549fb31c4c0a20fac73889a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +115,15 @@ TextAsset[]&#160;</td><td class="memItemRight" valign="bottom"><b>reactionAnimat
 <tr class="memitem:a46a1bbac60d2db6f0176aaa3c9d44b22"><td class="memItemLeft" align="right" valign="top"><a id="a46a1bbac60d2db6f0176aaa3c9d44b22"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>blendLength</b></td></tr>
 <tr class="separator:a46a1bbac60d2db6f0176aaa3c9d44b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71b1f0639cc6e23c1844d3c8e16b2d7"><td class="memItemLeft" align="right" valign="top"><a id="af71b1f0639cc6e23c1844d3c8e16b2d7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>NumberOfSkippedFrames</b> = 2</td></tr>
+<tr class="separator:af71b1f0639cc6e23c1844d3c8e16b2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b058ff3281c2c64255e581e3c248ce"><td class="memItemLeft" align="right" valign="top"><a id="a65b058ff3281c2c64255e581e3c248ce"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOffScreen</b> = false</td></tr>
+<tr class="separator:a65b058ff3281c2c64255e581e3c248ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class will store all the needed information for making a video preview scene in the social feed. For every video post in the social feed, a render texture will need to be created. The animations file can be found in the folder "Ressources/AnimationData/Animations/" </p>
+<div class="textblock"><p>This class will store all the needed information for making a video preview scene in the social feed. The animations file can be found in the folder "Ressources/AnimationData/Animations/" </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99bcec7bc0548262231cc0b3a10e5a5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99bcec7bc0548262231cc0b3a10e5a5f">&#9670;&nbsp;</a></span>PlayReaction()</h2>
@@ -145,7 +148,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>blendLength</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>This method is called by <a class="el" href="class_social_feed_video_post.html">SocialFeedVideoPost</a> and play the reaction animation when the event is received. It uses Motion Matching internally, fining a best frame to interpolate to, then creates a new blended animation to play. </p>
+<p>This method is called by <a class="el" href="class_social_feed_video_post.html">SocialFeedVideoPost</a> and play the reaction animation when the event is received. It uses Motion Matching internally, finding a best frame to interpolate to, then creates a new blended animation to play. </p>
 
 </div>
 </div>

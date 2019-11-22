@@ -3,20 +3,14 @@
 Inheritance diagram for Social\+Feed\+Job\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_social_feed_job}
+\includegraphics[height=3.000000cm]{class_social_feed_job}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_social_feed_job_acf9609c3cd576b6c40d16f201bf0ec21}\label{class_social_feed_job_acf9609c3cd576b6c40d16f201bf0ec21}} 
-void {\bfseries Initialize} (Db\+Entity work)
-\item 
-\mbox{\Hypertarget{class_social_feed_job_a217151d633c130dc61e0604761fa15ff}\label{class_social_feed_job_a217151d633c130dc61e0604761fa15ff}} 
-void {\bfseries Go\+To\+Job} (int value)
-\item 
-\mbox{\Hypertarget{class_social_feed_job_a87e3e5435a343e48ecc361d6bfa8b022}\label{class_social_feed_job_a87e3e5435a343e48ecc361d6bfa8b022}} 
-void {\bfseries Set\+Post\+Height} ()
+\mbox{\Hypertarget{class_social_feed_job_a97f12bab995e3ed6044a7cf9450f2744}\label{class_social_feed_job_a97f12bab995e3ed6044a7cf9450f2744}} 
+void {\bfseries Go\+To\+Job} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -27,9 +21,56 @@ Game\+Object {\bfseries Failure\+Text}
 \mbox{\Hypertarget{class_social_feed_job_aa6b499c93821525fdab8b7799358316e}\label{class_social_feed_job_aa6b499c93821525fdab8b7799358316e}} 
 Image {\bfseries Post\+Content\+Image}
 \item 
-\mbox{\Hypertarget{class_social_feed_job_acbc8a6fb8cc00ab51e16e8f04a2308ca}\label{class_social_feed_job_acbc8a6fb8cc00ab51e16e8f04a2308ca}} 
-Text {\bfseries Caption\+Text}
+\mbox{\Hypertarget{class_social_feed_job_aed1985819020b88615318b118a42e697}\label{class_social_feed_job_aed1985819020b88615318b118a42e697}} 
+Scene\+Loader {\bfseries Scene\+Loader}
+\item 
+\mbox{\Hypertarget{class_social_feed_job_ae17711afa02ed4b2782fcdf69938da49}\label{class_social_feed_job_ae17711afa02ed4b2782fcdf69938da49}} 
+Game\+Object {\bfseries Progressor}
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_social_feed_job_a3d7bb88faa9461b7af360f8168a4a155}{Type\+Specific\+Init}} (Db\+Entity post)
+\begin{DoxyCompactList}\small\item\em Post type specific initialization actions \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_social_feed_job_a81428e328d5b72f06f42898a8740850d}{Type\+Specific\+Like\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Post type specific Like Button actions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_social_feed_job_a3d7bb88faa9461b7af360f8168a4a155}\label{class_social_feed_job_a3d7bb88faa9461b7af360f8168a4a155}} 
+\index{SocialFeedJob@{SocialFeedJob}!TypeSpecificInit@{TypeSpecificInit}}
+\index{TypeSpecificInit@{TypeSpecificInit}!SocialFeedJob@{SocialFeedJob}}
+\doxysubsubsection{\texorpdfstring{TypeSpecificInit()}{TypeSpecificInit()}}
+{\footnotesize\ttfamily override void Social\+Feed\+Job.\+Type\+Specific\+Init (\begin{DoxyParamCaption}\item[{Db\+Entity}]{post }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Post type specific initialization actions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post} & The post object\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_social_feed_entry_ac22b606bdf57a9347f474c149745823a}{Social\+Feed\+Entry}}.
+
+\mbox{\Hypertarget{class_social_feed_job_a81428e328d5b72f06f42898a8740850d}\label{class_social_feed_job_a81428e328d5b72f06f42898a8740850d}} 
+\index{SocialFeedJob@{SocialFeedJob}!TypeSpecificLikeActions@{TypeSpecificLikeActions}}
+\index{TypeSpecificLikeActions@{TypeSpecificLikeActions}!SocialFeedJob@{SocialFeedJob}}
+\doxysubsubsection{\texorpdfstring{TypeSpecificLikeActions()}{TypeSpecificLikeActions()}}
+{\footnotesize\ttfamily override void Social\+Feed\+Job.\+Type\+Specific\+Like\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Post type specific Like Button actions 
+
+
+
+Implements \mbox{\hyperlink{class_social_feed_entry_a610671b78752585e3832e8afa0ee3d08}{Social\+Feed\+Entry}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

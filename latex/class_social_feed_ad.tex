@@ -3,29 +3,25 @@
 Inheritance diagram for Social\+Feed\+Ad\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_social_feed_ad}
+\includegraphics[height=2.842640cm]{class_social_feed_ad}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_social_feed_ad_afe4e855723b58c205f42f1ddb91f7fa2}\label{class_social_feed_ad_afe4e855723b58c205f42f1ddb91f7fa2}} 
-void {\bfseries Initialize\+Ad} (Db\+Entity ad)
-\item 
+override void \mbox{\hyperlink{class_social_feed_ad_a59fe0d67f1c0a306191ab12af73c5968}{Initialize}} (Db\+Entity ad, List$<$ \mbox{\hyperlink{class_s_m_feed_configuration_1_1_post_1_1_comment}{S\+M\+Feed\+Configuration.\+Post.\+Comment}} $>$ comments=null)
+\begin{DoxyCompactList}\small\item\em Initializes a post based on the post data that is passed through. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_social_feed_ad_ac3d02ae5d7b232a805a116bd415a7b79}\label{class_social_feed_ad_ac3d02ae5d7b232a805a116bd415a7b79}} 
 void {\bfseries Buy\+Upgrade} ()
 \item 
-\mbox{\Hypertarget{class_social_feed_ad_a278e807b044deb082410fed2a2ff7cd3}\label{class_social_feed_ad_a278e807b044deb082410fed2a2ff7cd3}} 
-void {\bfseries Set\+Post\+Height} ()
+\mbox{\Hypertarget{class_social_feed_ad_ab6f79effca00d152a5e2706a8899fbd4}\label{class_social_feed_ad_ab6f79effca00d152a5e2706a8899fbd4}} 
+new void {\bfseries Set\+Post\+Height} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_social_feed_ad_a94747b323d8aca28f053e65147fca989}\label{class_social_feed_ad_a94747b323d8aca28f053e65147fca989}} 
 Image {\bfseries Post\+Content\+Image}
-\item 
-\mbox{\Hypertarget{class_social_feed_ad_aaa00e5f01efdbf9b63b9a28e1b484962}\label{class_social_feed_ad_aaa00e5f01efdbf9b63b9a28e1b484962}} 
-Text {\bfseries Caption\+Text}
 \item 
 \mbox{\Hypertarget{class_social_feed_ad_a814321de5a744a5bfa320c0c905bf345}\label{class_social_feed_ad_a814321de5a744a5bfa320c0c905bf345}} 
 Game\+Object {\bfseries Buy\+Button}
@@ -36,6 +32,69 @@ Game\+Object {\bfseries Success\+Text}
 \mbox{\Hypertarget{class_social_feed_ad_a405589a288667803ed043e0c99f31d0d}\label{class_social_feed_ad_a405589a288667803ed043e0c99f31d0d}} 
 Game\+Object {\bfseries Failure\+Text}
 \end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_social_feed_ad_aa8007c2198def2c57afe6751f4ba1eab}{Type\+Specific\+Init}} (Db\+Entity post)
+\begin{DoxyCompactList}\small\item\em Post type specific initialization actions \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_social_feed_ad_a0646231e3af67d3fa1d2cfc545f85e7d}{Type\+Specific\+Like\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Post type specific Like Button actions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_social_feed_ad_a59fe0d67f1c0a306191ab12af73c5968}\label{class_social_feed_ad_a59fe0d67f1c0a306191ab12af73c5968}} 
+\index{SocialFeedAd@{SocialFeedAd}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SocialFeedAd@{SocialFeedAd}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily override void Social\+Feed\+Ad.\+Initialize (\begin{DoxyParamCaption}\item[{Db\+Entity}]{post,  }\item[{List$<$ \mbox{\hyperlink{class_s_m_feed_configuration_1_1_post_1_1_comment}{S\+M\+Feed\+Configuration.\+Post.\+Comment}} $>$}]{comments = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initializes a post based on the post data that is passed through. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post} & The post data in the DB\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_social_feed_entry_afbcdf1492fb850f63c3bacee1e9d4324}{Social\+Feed\+Entry}}.
+
+\mbox{\Hypertarget{class_social_feed_ad_aa8007c2198def2c57afe6751f4ba1eab}\label{class_social_feed_ad_aa8007c2198def2c57afe6751f4ba1eab}} 
+\index{SocialFeedAd@{SocialFeedAd}!TypeSpecificInit@{TypeSpecificInit}}
+\index{TypeSpecificInit@{TypeSpecificInit}!SocialFeedAd@{SocialFeedAd}}
+\doxysubsubsection{\texorpdfstring{TypeSpecificInit()}{TypeSpecificInit()}}
+{\footnotesize\ttfamily override void Social\+Feed\+Ad.\+Type\+Specific\+Init (\begin{DoxyParamCaption}\item[{Db\+Entity}]{post }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Post type specific initialization actions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em post} & The post object\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_social_feed_entry_ac22b606bdf57a9347f474c149745823a}{Social\+Feed\+Entry}}.
+
+\mbox{\Hypertarget{class_social_feed_ad_a0646231e3af67d3fa1d2cfc545f85e7d}\label{class_social_feed_ad_a0646231e3af67d3fa1d2cfc545f85e7d}} 
+\index{SocialFeedAd@{SocialFeedAd}!TypeSpecificLikeActions@{TypeSpecificLikeActions}}
+\index{TypeSpecificLikeActions@{TypeSpecificLikeActions}!SocialFeedAd@{SocialFeedAd}}
+\doxysubsubsection{\texorpdfstring{TypeSpecificLikeActions()}{TypeSpecificLikeActions()}}
+{\footnotesize\ttfamily override void Social\+Feed\+Ad.\+Type\+Specific\+Like\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Post type specific Like Button actions 
+
+
+
+Implements \mbox{\hyperlink{class_social_feed_entry_a610671b78752585e3832e8afa0ee3d08}{Social\+Feed\+Entry}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -9,8 +9,19 @@ Inheritance diagram for Game\+Manager\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_game_manager_aefc835af57ffa012886500dad6ee5e35}{Load\+Next\+Scene}} ()
-\begin{DoxyCompactList}\small\item\em Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_game_manager_aec50a42d44dac8d02489f05a0fc78af2}{Load\+Next\+Scene}} (string scene\+Name=null)
+\begin{DoxyCompactList}\small\item\em Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_ae92b4bb380b41ba9845a2c5009802549}\label{class_game_manager_ae92b4bb380b41ba9845a2c5009802549}} 
+string {\bfseries Get\+Next\+Scene\+Name} ()
+\item 
+void \mbox{\hyperlink{class_game_manager_af5b52850f2dfa772cd38407f1ba37eba}{Prepare\+To\+Load\+Next\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Does the initialisation for the next scene of the game progression. The scene load has to be triggered separately. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_af6e67bf2d61d7a63a78348acbccc6118}{Register\+Localized\+Text}} (\mbox{\hyperlink{interface_scriptable_objects_1_1_i_localize_text}{I\+Localize\+Text}} obj)
+\begin{DoxyCompactList}\small\item\em Register a text to a Hashset of localized text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a06d88ce031206d0b3eba2e55448dce5b}{Unregister\+Localized\+Text}} (\mbox{\hyperlink{interface_scriptable_objects_1_1_i_localize_text}{I\+Localize\+Text}} obj)
+\begin{DoxyCompactList}\small\item\em Unregister a text from the localized text list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_acb74c616e329444dfe68644635a3810e}{Send\+Change\+Language\+Event}} ()
+\begin{DoxyCompactList}\small\item\em Send an update text event to every localized text registered \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,6 +40,15 @@ string {\bfseries End\+Scene}
 \mbox{\Hypertarget{class_game_manager_abffdbf555d120918940eed616304af4e}\label{class_game_manager_abffdbf555d120918940eed616304af4e}} 
 \mbox{\hyperlink{class_swipe_manager}{Swipe\+Manager}} {\bfseries Swipe\+Manager}
 \item 
+\mbox{\Hypertarget{class_game_manager_ab8a1743cdfdc4c27df4292603a3752fa}\label{class_game_manager_ab8a1743cdfdc4c27df4292603a3752fa}} 
+\mbox{\hyperlink{class_ability_progression_manager}{Ability\+Progression\+Manager}} {\bfseries Ability\+Progression}
+\item 
+\mbox{\Hypertarget{class_game_manager_a1a223c58396ef3b0223a53cfd7686024}\label{class_game_manager_a1a223c58396ef3b0223a53cfd7686024}} 
+\mbox{\hyperlink{class_upgrade_inventory}{Upgrade\+Inventory}} {\bfseries Upgrade\+Inventory}
+\item 
+\mbox{\Hypertarget{class_game_manager_a93b6e2c6c6e540e4da634cba3d5715d0}\label{class_game_manager_a93b6e2c6c6e540e4da634cba3d5715d0}} 
+\mbox{\hyperlink{class_scriptable_objects_1_1_settings}{Settings}} {\bfseries settings}
+\item 
 \mbox{\Hypertarget{class_game_manager_a439ee87034f8417ffe474cdab7ec6bf6}\label{class_game_manager_a439ee87034f8417ffe474cdab7ec6bf6}} 
 \mbox{\hyperlink{class_score_system}{Score\+System}} {\bfseries Score\+System}
 \item 
@@ -46,6 +66,15 @@ Text\+Asset {\bfseries Db\+Asset}
 \item 
 \mbox{\Hypertarget{class_game_manager_abaa103f959952fdc885efa09aeea45eb}\label{class_game_manager_abaa103f959952fdc885efa09aeea45eb}} 
 \mbox{\hyperlink{class_post_reference_bank}{Post\+Reference\+Bank}} {\bfseries post\+Refs}
+\item 
+\mbox{\Hypertarget{class_game_manager_a56700370b8ca4c2fe4b455b75d3ece85}\label{class_game_manager_a56700370b8ca4c2fe4b455b75d3ece85}} 
+\mbox{\hyperlink{class_scriptable_objects_1_1_work_stats}{Work\+Stats}} {\bfseries work\+Stats\+So}
+\item 
+\mbox{\Hypertarget{class_game_manager_af6abd3324ce6767b286a5235cda65a95}\label{class_game_manager_af6abd3324ce6767b286a5235cda65a95}} 
+bool {\bfseries testing\+Build}
+\item 
+\mbox{\Hypertarget{class_game_manager_a2d00735385229566c97cc0719e1a2171}\label{class_game_manager_a2d00735385229566c97cc0719e1a2171}} 
+bool {\bfseries work\+Stats\+Post\+Enabled}
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -59,16 +88,76 @@ static Castle\+DB {\bfseries Castle\+Db}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_game_manager_aefc835af57ffa012886500dad6ee5e35}\label{class_game_manager_aefc835af57ffa012886500dad6ee5e35}} 
+\mbox{\Hypertarget{class_game_manager_aec50a42d44dac8d02489f05a0fc78af2}\label{class_game_manager_aec50a42d44dac8d02489f05a0fc78af2}} 
 \index{GameManager@{GameManager}!LoadNextScene@{LoadNextScene}}
 \index{LoadNextScene@{LoadNextScene}!GameManager@{GameManager}}
 \doxysubsubsection{\texorpdfstring{LoadNextScene()}{LoadNextScene()}}
-{\footnotesize\ttfamily void Game\+Manager.\+Load\+Next\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily void Game\+Manager.\+Load\+Next\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene 
 
+\mbox{\Hypertarget{class_game_manager_af5b52850f2dfa772cd38407f1ba37eba}\label{class_game_manager_af5b52850f2dfa772cd38407f1ba37eba}} 
+\index{GameManager@{GameManager}!PrepareToLoadNextScene@{PrepareToLoadNextScene}}
+\index{PrepareToLoadNextScene@{PrepareToLoadNextScene}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{PrepareToLoadNextScene()}{PrepareToLoadNextScene()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Prepare\+To\+Load\+Next\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Does the initialisation for the next scene of the game progression. The scene load has to be triggered separately. 
+
+\mbox{\Hypertarget{class_game_manager_af6e67bf2d61d7a63a78348acbccc6118}\label{class_game_manager_af6e67bf2d61d7a63a78348acbccc6118}} 
+\index{GameManager@{GameManager}!RegisterLocalizedText@{RegisterLocalizedText}}
+\index{RegisterLocalizedText@{RegisterLocalizedText}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{RegisterLocalizedText()}{RegisterLocalizedText()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Register\+Localized\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scriptable_objects_1_1_i_localize_text}{I\+Localize\+Text}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register a text to a Hashset of localized text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the Localize\+Text object to be added to the list\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_game_manager_acb74c616e329444dfe68644635a3810e}\label{class_game_manager_acb74c616e329444dfe68644635a3810e}} 
+\index{GameManager@{GameManager}!SendChangeLanguageEvent@{SendChangeLanguageEvent}}
+\index{SendChangeLanguageEvent@{SendChangeLanguageEvent}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{SendChangeLanguageEvent()}{SendChangeLanguageEvent()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Send\+Change\+Language\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send an update text event to every localized text registered 
+
+\mbox{\Hypertarget{class_game_manager_a06d88ce031206d0b3eba2e55448dce5b}\label{class_game_manager_a06d88ce031206d0b3eba2e55448dce5b}} 
+\index{GameManager@{GameManager}!UnregisterLocalizedText@{UnregisterLocalizedText}}
+\index{UnregisterLocalizedText@{UnregisterLocalizedText}!GameManager@{GameManager}}
+\doxysubsubsection{\texorpdfstring{UnregisterLocalizedText()}{UnregisterLocalizedText()}}
+{\footnotesize\ttfamily void Game\+Manager.\+Unregister\+Localized\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_scriptable_objects_1_1_i_localize_text}{I\+Localize\+Text}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregister a text from the localized text list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the Localize\+Text object to be removed to the list\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

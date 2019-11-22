@@ -80,9 +80,24 @@ Inheritance diagram for GameManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aefc835af57ffa012886500dad6ee5e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aefc835af57ffa012886500dad6ee5e35">LoadNextScene</a> ()</td></tr>
-<tr class="memdesc:aefc835af57ffa012886500dad6ee5e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene  <a href="class_game_manager.html#aefc835af57ffa012886500dad6ee5e35">More...</a><br /></td></tr>
-<tr class="separator:aefc835af57ffa012886500dad6ee5e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec50a42d44dac8d02489f05a0fc78af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aec50a42d44dac8d02489f05a0fc78af2">LoadNextScene</a> (string sceneName=null)</td></tr>
+<tr class="memdesc:aec50a42d44dac8d02489f05a0fc78af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene  <a href="class_game_manager.html#aec50a42d44dac8d02489f05a0fc78af2">More...</a><br /></td></tr>
+<tr class="separator:aec50a42d44dac8d02489f05a0fc78af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92b4bb380b41ba9845a2c5009802549"><td class="memItemLeft" align="right" valign="top"><a id="ae92b4bb380b41ba9845a2c5009802549"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextSceneName</b> ()</td></tr>
+<tr class="separator:ae92b4bb380b41ba9845a2c5009802549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b52850f2dfa772cd38407f1ba37eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#af5b52850f2dfa772cd38407f1ba37eba">PrepareToLoadNextScene</a> ()</td></tr>
+<tr class="memdesc:af5b52850f2dfa772cd38407f1ba37eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the initialisation for the next scene of the game progression. The scene load has to be triggered separately.  <a href="class_game_manager.html#af5b52850f2dfa772cd38407f1ba37eba">More...</a><br /></td></tr>
+<tr class="separator:af5b52850f2dfa772cd38407f1ba37eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e67bf2d61d7a63a78348acbccc6118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#af6e67bf2d61d7a63a78348acbccc6118">RegisterLocalizedText</a> (<a class="el" href="interface_scriptable_objects_1_1_i_localize_text.html">ILocalizeText</a> obj)</td></tr>
+<tr class="memdesc:af6e67bf2d61d7a63a78348acbccc6118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a text to a Hashset of localized text  <a href="class_game_manager.html#af6e67bf2d61d7a63a78348acbccc6118">More...</a><br /></td></tr>
+<tr class="separator:af6e67bf2d61d7a63a78348acbccc6118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d88ce031206d0b3eba2e55448dce5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a06d88ce031206d0b3eba2e55448dce5b">UnregisterLocalizedText</a> (<a class="el" href="interface_scriptable_objects_1_1_i_localize_text.html">ILocalizeText</a> obj)</td></tr>
+<tr class="memdesc:a06d88ce031206d0b3eba2e55448dce5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a text from the localized text list  <a href="class_game_manager.html#a06d88ce031206d0b3eba2e55448dce5b">More...</a><br /></td></tr>
+<tr class="separator:a06d88ce031206d0b3eba2e55448dce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb74c616e329444dfe68644635a3810e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#acb74c616e329444dfe68644635a3810e">SendChangeLanguageEvent</a> ()</td></tr>
+<tr class="memdesc:acb74c616e329444dfe68644635a3810e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an update text event to every localized text registered  <a href="class_game_manager.html#acb74c616e329444dfe68644635a3810e">More...</a><br /></td></tr>
+<tr class="separator:acb74c616e329444dfe68644635a3810e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -101,6 +116,15 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>EndScene</b></td></
 <tr class="memitem:abffdbf555d120918940eed616304af4e"><td class="memItemLeft" align="right" valign="top"><a id="abffdbf555d120918940eed616304af4e"></a>
 <a class="el" href="class_swipe_manager.html">SwipeManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SwipeManager</b></td></tr>
 <tr class="separator:abffdbf555d120918940eed616304af4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a1743cdfdc4c27df4292603a3752fa"><td class="memItemLeft" align="right" valign="top"><a id="ab8a1743cdfdc4c27df4292603a3752fa"></a>
+<a class="el" href="class_ability_progression_manager.html">AbilityProgressionManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AbilityProgression</b></td></tr>
+<tr class="separator:ab8a1743cdfdc4c27df4292603a3752fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a223c58396ef3b0223a53cfd7686024"><td class="memItemLeft" align="right" valign="top"><a id="a1a223c58396ef3b0223a53cfd7686024"></a>
+<a class="el" href="class_upgrade_inventory.html">UpgradeInventory</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeInventory</b></td></tr>
+<tr class="separator:a1a223c58396ef3b0223a53cfd7686024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b6e2c6c6e540e4da634cba3d5715d0"><td class="memItemLeft" align="right" valign="top"><a id="a93b6e2c6c6e540e4da634cba3d5715d0"></a>
+<a class="el" href="class_scriptable_objects_1_1_settings.html">Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
+<tr class="separator:a93b6e2c6c6e540e4da634cba3d5715d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439ee87034f8417ffe474cdab7ec6bf6"><td class="memItemLeft" align="right" valign="top"><a id="a439ee87034f8417ffe474cdab7ec6bf6"></a>
 <a class="el" href="class_score_system.html">ScoreSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ScoreSystem</b></td></tr>
 <tr class="separator:a439ee87034f8417ffe474cdab7ec6bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +143,15 @@ TextAsset&#160;</td><td class="memItemRight" valign="bottom"><b>DbAsset</b></td>
 <tr class="memitem:abaa103f959952fdc885efa09aeea45eb"><td class="memItemLeft" align="right" valign="top"><a id="abaa103f959952fdc885efa09aeea45eb"></a>
 <a class="el" href="class_post_reference_bank.html">PostReferenceBank</a>&#160;</td><td class="memItemRight" valign="bottom"><b>postRefs</b></td></tr>
 <tr class="separator:abaa103f959952fdc885efa09aeea45eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56700370b8ca4c2fe4b455b75d3ece85"><td class="memItemLeft" align="right" valign="top"><a id="a56700370b8ca4c2fe4b455b75d3ece85"></a>
+<a class="el" href="class_scriptable_objects_1_1_work_stats.html">WorkStats</a>&#160;</td><td class="memItemRight" valign="bottom"><b>workStatsSo</b></td></tr>
+<tr class="separator:a56700370b8ca4c2fe4b455b75d3ece85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6abd3324ce6767b286a5235cda65a95"><td class="memItemLeft" align="right" valign="top"><a id="af6abd3324ce6767b286a5235cda65a95"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>testingBuild</b></td></tr>
+<tr class="separator:af6abd3324ce6767b286a5235cda65a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d00735385229566c97cc0719e1a2171"><td class="memItemLeft" align="right" valign="top"><a id="a2d00735385229566c97cc0719e1a2171"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>workStatsPostEnabled</b></td></tr>
+<tr class="separator:a2d00735385229566c97cc0719e1a2171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -130,8 +163,8 @@ static CastleDB&#160;</td><td class="memItemRight" valign="bottom"><b>CastleDb</
 <tr class="separator:a09631edb87d77238e75be59a61da9efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aefc835af57ffa012886500dad6ee5e35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefc835af57ffa012886500dad6ee5e35">&#9670;&nbsp;</a></span>LoadNextScene()</h2>
+<a id="aec50a42d44dac8d02489f05a0fc78af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec50a42d44dac8d02489f05a0fc78af2">&#9670;&nbsp;</a></span>LoadNextScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,6 +174,34 @@ static CastleDB&#160;</td><td class="memItemRight" valign="bottom"><b>CastleDb</
       <table class="memname">
         <tr>
           <td class="memname">void GameManager.LoadNextScene </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sceneName</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene </p>
+
+</div>
+</div>
+<a id="af5b52850f2dfa772cd38407f1ba37eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b52850f2dfa772cd38407f1ba37eba">&#9670;&nbsp;</a></span>PrepareToLoadNextScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.PrepareToLoadNextScene </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -153,7 +214,114 @@ static CastleDB&#160;</td><td class="memItemRight" valign="bottom"><b>CastleDb</
 </table>
 </div><div class="memdoc">
 
-<p>Will use the levels progression scriptable object to load the next scene. Should be called by any manager that needs to load a new scene </p>
+<p>Does the initialisation for the next scene of the game progression. The scene load has to be triggered separately. </p>
+
+</div>
+</div>
+<a id="af6e67bf2d61d7a63a78348acbccc6118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e67bf2d61d7a63a78348acbccc6118">&#9670;&nbsp;</a></span>RegisterLocalizedText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.RegisterLocalizedText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_scriptable_objects_1_1_i_localize_text.html">ILocalizeText</a>&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a text to a Hashset of localized text </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the LocalizeText object to be added to the list</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb74c616e329444dfe68644635a3810e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb74c616e329444dfe68644635a3810e">&#9670;&nbsp;</a></span>SendChangeLanguageEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.SendChangeLanguageEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send an update text event to every localized text registered </p>
+
+</div>
+</div>
+<a id="a06d88ce031206d0b3eba2e55448dce5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d88ce031206d0b3eba2e55448dce5b">&#9670;&nbsp;</a></span>UnregisterLocalizedText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.UnregisterLocalizedText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_scriptable_objects_1_1_i_localize_text.html">ILocalizeText</a>&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unregister a text from the localized text list </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>the LocalizeText object to be removed to the list</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentNullException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

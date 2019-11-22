@@ -1,0 +1,112 @@
+\hypertarget{class_upgrade_inventory}{}\doxysection{Upgrade\+Inventory Class Reference}
+\label{class_upgrade_inventory}\index{UpgradeInventory@{UpgradeInventory}}
+
+
+This SO should contain the highest tier of each ability that the player has unlocked  
+
+
+Inheritance diagram for Upgrade\+Inventory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_upgrade_inventory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_upgrade_object}{Upgrade\+Object}} \mbox{\hyperlink{class_upgrade_inventory_ac8c9bbf00a1c812bdd3ecd29e7f6e1cc}{Get\+Upgrade\+Of\+Type}} (Upgrade\+Type type)
+\begin{DoxyCompactList}\small\item\em Looks for an upgrade with the specified type and returns it. If no upgrade is found with that type, returns null. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ability}{Ability}} \mbox{\hyperlink{class_upgrade_inventory_a29ca949560f8b76a0c22a13585987cbc}{Get\+Ability\+Of\+Type}} (Ability\+Type type)
+\begin{DoxyCompactList}\small\item\em Checks if an upgrade has an ability with the specified type and returns it. If no upgrade was found with the specified ability type, then it returns null. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_upgrade_inventory_afd3fe1eecd4d94298dc3804cd27ea0b8}{Is\+Ability\+Unlocked}} (Ability\+Type type)
+\begin{DoxyCompactList}\small\item\em Checks if any upgrades have an ability with the passed ability type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_upgrade_inventory_a35eeb3baf94989ae50ad82f0f428e747}{Add\+Upgrade}} (\mbox{\hyperlink{class_upgrade_object}{Upgrade\+Object}} upgrade)
+\begin{DoxyCompactList}\small\item\em Adds an upgrade to the inventory. If an upgrade with the same type already exists in the inventory, it gets replaced with the newly added one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_upgrade_inventory_a104b225bd15daa0ec279ed591df095ce}\label{class_upgrade_inventory_a104b225bd15daa0ec279ed591df095ce}} 
+List$<$ \mbox{\hyperlink{class_upgrade_object}{Upgrade\+Object}} $>$ {\bfseries Upgrades}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This SO should contain the highest tier of each ability that the player has unlocked 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_upgrade_inventory_a35eeb3baf94989ae50ad82f0f428e747}\label{class_upgrade_inventory_a35eeb3baf94989ae50ad82f0f428e747}} 
+\index{UpgradeInventory@{UpgradeInventory}!AddUpgrade@{AddUpgrade}}
+\index{AddUpgrade@{AddUpgrade}!UpgradeInventory@{UpgradeInventory}}
+\doxysubsubsection{\texorpdfstring{AddUpgrade()}{AddUpgrade()}}
+{\footnotesize\ttfamily void Upgrade\+Inventory.\+Add\+Upgrade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_upgrade_object}{Upgrade\+Object}}}]{upgrade }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an upgrade to the inventory. If an upgrade with the same type already exists in the inventory, it gets replaced with the newly added one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upgrade} & The new upgrade to add.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_upgrade_inventory_a29ca949560f8b76a0c22a13585987cbc}\label{class_upgrade_inventory_a29ca949560f8b76a0c22a13585987cbc}} 
+\index{UpgradeInventory@{UpgradeInventory}!GetAbilityOfType@{GetAbilityOfType}}
+\index{GetAbilityOfType@{GetAbilityOfType}!UpgradeInventory@{UpgradeInventory}}
+\doxysubsubsection{\texorpdfstring{GetAbilityOfType()}{GetAbilityOfType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ability}{Ability}} Upgrade\+Inventory.\+Get\+Ability\+Of\+Type (\begin{DoxyParamCaption}\item[{Ability\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if an upgrade has an ability with the specified type and returns it. If no upgrade was found with the specified ability type, then it returns null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the ability.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ability with the specified type, or null if no upgrade contains an ability with the type.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_upgrade_inventory_ac8c9bbf00a1c812bdd3ecd29e7f6e1cc}\label{class_upgrade_inventory_ac8c9bbf00a1c812bdd3ecd29e7f6e1cc}} 
+\index{UpgradeInventory@{UpgradeInventory}!GetUpgradeOfType@{GetUpgradeOfType}}
+\index{GetUpgradeOfType@{GetUpgradeOfType}!UpgradeInventory@{UpgradeInventory}}
+\doxysubsubsection{\texorpdfstring{GetUpgradeOfType()}{GetUpgradeOfType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_upgrade_object}{Upgrade\+Object}} Upgrade\+Inventory.\+Get\+Upgrade\+Of\+Type (\begin{DoxyParamCaption}\item[{Upgrade\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Looks for an upgrade with the specified type and returns it. If no upgrade is found with that type, returns null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the upgrade.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The upgrade with the specified type, or null if no upgrade was found.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_upgrade_inventory_afd3fe1eecd4d94298dc3804cd27ea0b8}\label{class_upgrade_inventory_afd3fe1eecd4d94298dc3804cd27ea0b8}} 
+\index{UpgradeInventory@{UpgradeInventory}!IsAbilityUnlocked@{IsAbilityUnlocked}}
+\index{IsAbilityUnlocked@{IsAbilityUnlocked}!UpgradeInventory@{UpgradeInventory}}
+\doxysubsubsection{\texorpdfstring{IsAbilityUnlocked()}{IsAbilityUnlocked()}}
+{\footnotesize\ttfamily bool Upgrade\+Inventory.\+Is\+Ability\+Unlocked (\begin{DoxyParamCaption}\item[{Ability\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if any upgrades have an ability with the passed ability type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of ability to be checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if an ability with the specified type can be found, false if no upgrade has it.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Git\+Hub/\+Graduation\+Game/\+Assets/\+Scripts/\+Scriptable\+Objects/Upgrade\+Inventory.\+cs\end{DoxyCompactItemize}

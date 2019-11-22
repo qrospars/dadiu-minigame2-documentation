@@ -1,0 +1,76 @@
+\hypertarget{class_animator_manager}{}\doxysection{Animator\+Manager Class Reference}
+\label{class_animator_manager}\index{AnimatorManager@{AnimatorManager}}
+
+
+This MB should be placed on the player prefab. To trigger an animation on all animators its Set\+Trigger method can be called from Play\+Maker with the name of the trigger that needs to be set.  
+
+
+Inheritance diagram for Animator\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_animator_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_animator_manager_a43e7bf1c58b9e9eb2e51934d48fc5acb}{Register}} (Animator a)
+\begin{DoxyCompactList}\small\item\em Add an animator to the list which will be called during Set\+Trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_manager_a7350eeb5696f1688b9e4df3d5550495e}{Unregister}} (Animator a)
+\begin{DoxyCompactList}\small\item\em Remove the animator and no longer call it during Set\+Trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animator_manager_a658c2dd9b0243f1837f84841a8185f95}{Set\+Trigger}} (string trigger\+Name)
+\begin{DoxyCompactList}\small\item\em Call Set\+Trigger on all registered animators. Uses the same trigger name for all of them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_animator_manager_a023b63e5c8031229e7fa29da2fc19315}\label{class_animator_manager_a023b63e5c8031229e7fa29da2fc19315}} 
+static \mbox{\hyperlink{class_animator_manager}{Animator\+Manager}} {\bfseries Instance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This MB should be placed on the player prefab. To trigger an animation on all animators its Set\+Trigger method can be called from Play\+Maker with the name of the trigger that needs to be set. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_animator_manager_a43e7bf1c58b9e9eb2e51934d48fc5acb}\label{class_animator_manager_a43e7bf1c58b9e9eb2e51934d48fc5acb}} 
+\index{AnimatorManager@{AnimatorManager}!Register@{Register}}
+\index{Register@{Register}!AnimatorManager@{AnimatorManager}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily void Animator\+Manager.\+Register (\begin{DoxyParamCaption}\item[{Animator}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an animator to the list which will be called during Set\+Trigger. 
+
+\mbox{\Hypertarget{class_animator_manager_a658c2dd9b0243f1837f84841a8185f95}\label{class_animator_manager_a658c2dd9b0243f1837f84841a8185f95}} 
+\index{AnimatorManager@{AnimatorManager}!SetTrigger@{SetTrigger}}
+\index{SetTrigger@{SetTrigger}!AnimatorManager@{AnimatorManager}}
+\doxysubsubsection{\texorpdfstring{SetTrigger()}{SetTrigger()}}
+{\footnotesize\ttfamily void Animator\+Manager.\+Set\+Trigger (\begin{DoxyParamCaption}\item[{string}]{trigger\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Call Set\+Trigger on all registered animators. Uses the same trigger name for all of them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trigger\+Name} & The name of the trigger.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_animator_manager_a7350eeb5696f1688b9e4df3d5550495e}\label{class_animator_manager_a7350eeb5696f1688b9e4df3d5550495e}} 
+\index{AnimatorManager@{AnimatorManager}!Unregister@{Unregister}}
+\index{Unregister@{Unregister}!AnimatorManager@{AnimatorManager}}
+\doxysubsubsection{\texorpdfstring{Unregister()}{Unregister()}}
+{\footnotesize\ttfamily void Animator\+Manager.\+Unregister (\begin{DoxyParamCaption}\item[{Animator}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove the animator and no longer call it during Set\+Trigger. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/quentinrospars/\+Documents/\+Git\+Hub/\+Graduation\+Game/\+Assets/\+Scripts/\+Managers/Animator\+Manager.\+cs\end{DoxyCompactItemize}

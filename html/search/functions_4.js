@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initializepost_231',['InitializePost',['../class_social_feed_post_init.html#a8132df361d84fea92f39457d63f4b2f4',1,'SocialFeedPostInit.InitializePost()'],['../class_social_feed_video_post.html#a59b9357bf452da8c8440185188b2fed9',1,'SocialFeedVideoPost.InitializePost()']]]
+  ['getabilityoftype_319',['GetAbilityOfType',['../class_upgrade_inventory.html#a29ca949560f8b76a0c22a13585987cbc',1,'UpgradeInventory']]],
+  ['getupgradeoftype_320',['GetUpgradeOfType',['../class_upgrade_inventory.html#ac8c9bbf00a1c812bdd3ecd29e7f6e1cc',1,'UpgradeInventory']]]
 ];

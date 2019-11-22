@@ -2,7 +2,7 @@
 \label{class_video_post_manager}\index{VideoPostManager@{VideoPostManager}}
 
 
-This class will store all the needed information for making a video preview scene in the social feed. For every video post in the social feed, a render texture will need to be created. The animations file can be found in the folder \char`\"{}\+Ressources/\+Animation\+Data/\+Animations/\char`\"{}  
+This class will store all the needed information for making a video preview scene in the social feed. The animations file can be found in the folder \char`\"{}\+Ressources/\+Animation\+Data/\+Animations/\char`\"{}  
 
 
 Inheritance diagram for Video\+Post\+Manager\+:\begin{figure}[H]
@@ -15,7 +15,7 @@ Inheritance diagram for Video\+Post\+Manager\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_video_post_manager_a99bcec7bc0548262231cc0b3a10e5a5f}{Play\+Reaction}} ()
-\begin{DoxyCompactList}\small\item\em This method is called by \mbox{\hyperlink{class_social_feed_video_post}{Social\+Feed\+Video\+Post}} and play the reaction animation when the event is received. It uses Motion Matching internally, fining a best frame to interpolate to, then creates a new blended animation to play. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method is called by \mbox{\hyperlink{class_social_feed_video_post}{Social\+Feed\+Video\+Post}} and play the reaction animation when the event is received. It uses Motion Matching internally, finding a best frame to interpolate to, then creates a new blended animation to play. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_video_post_manager_aec27b43a844e3bbe39048dd0bf727cdf}\label{class_video_post_manager_aec27b43a844e3bbe39048dd0bf727cdf}} 
 void {\bfseries Start} ()
 \item 
@@ -31,11 +31,8 @@ void {\bfseries Tick} ()
 \mbox{\Hypertarget{class_video_post_manager_a7cfaf0d31d8d06edf512045a7aba6124}\label{class_video_post_manager_a7cfaf0d31d8d06edf512045a7aba6124}} 
 Camera {\bfseries camera}
 \item 
-\mbox{\Hypertarget{class_video_post_manager_a59c94df499afdacddfbd89a3d01fde4f}\label{class_video_post_manager_a59c94df499afdacddfbd89a3d01fde4f}} 
-Sprite {\bfseries View\+Sprite}
-\item 
-\mbox{\Hypertarget{class_video_post_manager_ae53c11b2e5f7c25042efa3f5a69df975}\label{class_video_post_manager_ae53c11b2e5f7c25042efa3f5a69df975}} 
-Render\+Texture {\bfseries render\+Texture}
+\mbox{\Hypertarget{class_video_post_manager_a0c419abb0e9c3f4db8f54ecef080c573}\label{class_video_post_manager_a0c419abb0e9c3f4db8f54ecef080c573}} 
+Render\+Texture {\bfseries Render\+Texture}
 \item 
 \mbox{\Hypertarget{class_video_post_manager_a15b6923549fb31c4c0a20fac73889a00}\label{class_video_post_manager_a15b6923549fb31c4c0a20fac73889a00}} 
 Text\+Asset {\bfseries loop\+Animation}
@@ -45,11 +42,17 @@ Text\+Asset\mbox{[}$\,$\mbox{]} {\bfseries reaction\+Animation}
 \item 
 \mbox{\Hypertarget{class_video_post_manager_a46a1bbac60d2db6f0176aaa3c9d44b22}\label{class_video_post_manager_a46a1bbac60d2db6f0176aaa3c9d44b22}} 
 int {\bfseries blend\+Length}
+\item 
+\mbox{\Hypertarget{class_video_post_manager_af71b1f0639cc6e23c1844d3c8e16b2d7}\label{class_video_post_manager_af71b1f0639cc6e23c1844d3c8e16b2d7}} 
+int {\bfseries Number\+Of\+Skipped\+Frames} = 2
+\item 
+\mbox{\Hypertarget{class_video_post_manager_a65b058ff3281c2c64255e581e3c248ce}\label{class_video_post_manager_a65b058ff3281c2c64255e581e3c248ce}} 
+bool {\bfseries Is\+Off\+Screen} = false
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-This class will store all the needed information for making a video preview scene in the social feed. For every video post in the social feed, a render texture will need to be created. The animations file can be found in the folder \char`\"{}\+Ressources/\+Animation\+Data/\+Animations/\char`\"{} 
+This class will store all the needed information for making a video preview scene in the social feed. The animations file can be found in the folder \char`\"{}\+Ressources/\+Animation\+Data/\+Animations/\char`\"{} 
 
 
 
@@ -62,7 +65,7 @@ This class will store all the needed information for making a video preview scen
 
 
 
-This method is called by \mbox{\hyperlink{class_social_feed_video_post}{Social\+Feed\+Video\+Post}} and play the reaction animation when the event is received. It uses Motion Matching internally, fining a best frame to interpolate to, then creates a new blended animation to play. 
+This method is called by \mbox{\hyperlink{class_social_feed_video_post}{Social\+Feed\+Video\+Post}} and play the reaction animation when the event is received. It uses Motion Matching internally, finding a best frame to interpolate to, then creates a new blended animation to play. 
 
 
 

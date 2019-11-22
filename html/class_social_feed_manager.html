@@ -63,6 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -76,32 +78,50 @@ $(function() {
 Inheritance diagram for SocialFeedManager:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_social_feed_manager.png" usemap="#SocialFeedManager_map" alt=""/>
-  <map id="SocialFeedManager_map" name="SocialFeedManager_map">
-<area href="interface_i_updateable.html" title="Interface the updateable class should inherit." alt="IUpdateable" shape="rect" coords="137,0,264,24"/>
-  </map>
-</div></div>
+  <img src="class_social_feed_manager.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_social_feed_manager_1_1_post_info.html">PostInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9fe0fb13d57fabbd937d45a90d8ab553"><td class="memItemLeft" align="right" valign="top"><a id="a9fe0fb13d57fabbd937d45a90d8ab553"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PostType</b> { <br />
+&#160;&#160;<b>Own</b>, 
+<b>Friend</b>, 
+<b>Influencer</b>, 
+<b>UpgradeAd</b>, 
+<br />
+&#160;&#160;<b>WorkAd</b>
+<br />
+ }</td></tr>
+<tr class="separator:a9fe0fb13d57fabbd937d45a90d8ab553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a828225370ca31941848192041399bead"><td class="memItemLeft" align="right" valign="top"><a id="a828225370ca31941848192041399bead"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSocialFeed</b> ()</td></tr>
 <tr class="separator:a828225370ca31941848192041399bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352252a792ba554e94b2a768f2c85270"><td class="memItemLeft" align="right" valign="top"><a id="a352252a792ba554e94b2a768f2c85270"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
-<tr class="separator:a352252a792ba554e94b2a768f2c85270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d080374ef9d8c825d79457b8ba5d5fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_social_feed_manager.html#a0d080374ef9d8c825d79457b8ba5d5fd">ActivatePosts</a> ()</td></tr>
+<tr class="memdesc:a0d080374ef9d8c825d79457b8ba5d5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set active the posts that needs to be displayed. It is used for displaying the posts only when the user presses the comment button  <a href="class_social_feed_manager.html#a0d080374ef9d8c825d79457b8ba5d5fd">More...</a><br /></td></tr>
+<tr class="separator:a0d080374ef9d8c825d79457b8ba5d5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e651647f6b95d0072b4f0bb2004d186"><td class="memItemLeft" align="right" valign="top"><a id="a6e651647f6b95d0072b4f0bb2004d186"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
+<tr class="separator:a6e651647f6b95d0072b4f0bb2004d186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a888972c24c3bbf48bed784857b72aa"><td class="memItemLeft" align="right" valign="top"><a id="a8a888972c24c3bbf48bed784857b72aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a8a888972c24c3bbf48bed784857b72aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7069606135ea74eb61ebc6aae35ae57f"><td class="memItemLeft" align="right" valign="top"><a id="a7069606135ea74eb61ebc6aae35ae57f"></a>
-static Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>GetImage</b> (DbEntity e)</td></tr>
-<tr class="separator:a7069606135ea74eb61ebc6aae35ae57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ed16d5684a2d37da6138f9e6137b03c"><td class="memItemLeft" align="right" valign="top"><a id="a0ed16d5684a2d37da6138f9e6137b03c"></a>
-static GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefab</b> (DbEntity e)</td></tr>
-<tr class="separator:a0ed16d5684a2d37da6138f9e6137b03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50eef89206f361fb020e760f5d98859d"><td class="memItemLeft" align="right" valign="top"><a id="a50eef89206f361fb020e760f5d98859d"></a>
+static Sprite&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageForPost</b> (DbEntity e)</td></tr>
+<tr class="separator:a50eef89206f361fb020e760f5d98859d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e2d5368dec7a580e745f0bb531582e"><td class="memItemLeft" align="right" valign="top"><a id="a07e2d5368dec7a580e745f0bb531582e"></a>
+static <a class="el" href="class_video_post_manager.html">VideoPostManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrefab</b> (DbEntity e)</td></tr>
+<tr class="separator:a07e2d5368dec7a580e745f0bb531582e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae503b22361e156e63fde1be77f3ed960"><td class="memItemLeft" align="right" valign="top"><a id="ae503b22361e156e63fde1be77f3ed960"></a>
 static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPosterName</b> (DbEntity e)</td></tr>
 <tr class="separator:ae503b22361e156e63fde1be77f3ed960"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,9 +131,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0a601b5e37b35c82ae72e4d782631ec8"><td class="memItemLeft" align="right" valign="top"><a id="a0a601b5e37b35c82ae72e4d782631ec8"></a>
 RectTransform&#160;</td><td class="memItemRight" valign="bottom"><b>ContentTransform</b></td></tr>
 <tr class="separator:a0a601b5e37b35c82ae72e4d782631ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a0cbf89bb073ddb3fcf450277fb753"><td class="memItemLeft" align="right" valign="top"><a id="a43a0cbf89bb073ddb3fcf450277fb753"></a>
-GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>PostPrefabs</b></td></tr>
-<tr class="separator:a43a0cbf89bb073ddb3fcf450277fb753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091c90b243d978a9479ef27c408bac0c"><td class="memItemLeft" align="right" valign="top"><a id="a091c90b243d978a9479ef27c408bac0c"></a>
+<a class="el" href="class_social_feed_manager_1_1_post_info.html">PostInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>PostPrefabs</b></td></tr>
+<tr class="separator:a091c90b243d978a9479ef27c408bac0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30e651c4d2e1c0082a338f943649547"><td class="memItemLeft" align="right" valign="top"><a id="ae30e651c4d2e1c0082a338f943649547"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>configurationForced</b></td></tr>
+<tr class="separator:ae30e651c4d2e1c0082a338f943649547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a843b5e9de9571e1626cd0e1e891a2b95"><td class="memItemLeft" align="right" valign="top"><a id="a843b5e9de9571e1626cd0e1e891a2b95"></a>
 <a class="el" href="class_s_m_feed_configuration.html">SMFeedConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_configuration</b></td></tr>
 <tr class="separator:a843b5e9de9571e1626cd0e1e891a2b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +147,34 @@ Static Public Attributes</h2></td></tr>
 static <a class="el" href="class_social_feed_manager.html">SocialFeedManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b></td></tr>
 <tr class="separator:a6bf614fece50a66509b033e4d9d9b884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0d080374ef9d8c825d79457b8ba5d5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d080374ef9d8c825d79457b8ba5d5fd">&#9670;&nbsp;</a></span>ActivatePosts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SocialFeedManager.ActivatePosts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set active the posts that needs to be displayed. It is used for displaying the posts only when the user presses the comment button </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/quentinrospars/Documents/GitHub/GraduationGame/Assets/Scripts/ScriptableObjects/SocialFeedManager.cs</li>
 </ul>
