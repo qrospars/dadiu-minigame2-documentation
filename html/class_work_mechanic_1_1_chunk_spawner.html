@@ -105,8 +105,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a20fcaf7267ab216ee2d8d397d8ac48"><td class="memItemLeft" align="right" valign="top"><a id="a7a20fcaf7267ab216ee2d8d397d8ac48"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Spawn</b> (Vector3 spawnOrigin)</td></tr>
+<tr class="memitem:a7a20fcaf7267ab216ee2d8d397d8ac48"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_work_mechanic_1_1_chunk_spawner.html#a7a20fcaf7267ab216ee2d8d397d8ac48">Spawn</a> (Vector3 spawnOrigin)</td></tr>
+<tr class="memdesc:a7a20fcaf7267ab216ee2d8d397d8ac48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawn a new chunk using the current difficulty settings. To spawn a specific chunk with the correct probabilities, it uses this algorithm: <a href="https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item">https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item</a>  <a href="class_work_mechanic_1_1_chunk_spawner.html#a7a20fcaf7267ab216ee2d8d397d8ac48">More...</a><br /></td></tr>
 <tr class="separator:a7a20fcaf7267ab216ee2d8d397d8ac48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dca03e5cc3fc9ffd2687c611b26e79b"><td class="memItemLeft" align="right" valign="top"><a id="a7dca03e5cc3fc9ffd2687c611b26e79b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Despawn</b> (GameObject objectToRemove)</td></tr>
@@ -144,7 +144,42 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>spawnOrigin</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to spawn chunks on the belt when it is needed. It also holds all the positions used in the interaction logic (of the chunk) </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7a20fcaf7267ab216ee2d8d397d8ac48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a20fcaf7267ab216ee2d8d397d8ac48">&#9670;&nbsp;</a></span>Spawn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void WorkMechanic.ChunkSpawner.Spawn </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>spawnOrigin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Spawn a new chunk using the current difficulty settings. To spawn a specific chunk with the correct probabilities, it uses this algorithm: <a href="https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item">https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">spawnOrigin</td><td>The position where to spawn the chunk</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/quentinrospars/Documents/GitHub/GraduationGame/Assets/Scripts/WorkMechanic/ChunkSpawner.cs</li>
 </ul>
 </div><!-- contents -->

@@ -29,9 +29,8 @@ void {\bfseries On\+Disable} ()
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_work_mechanic_1_1_chunk_spawner_a7a20fcaf7267ab216ee2d8d397d8ac48}\label{class_work_mechanic_1_1_chunk_spawner_a7a20fcaf7267ab216ee2d8d397d8ac48}} 
-static void {\bfseries Spawn} (Vector3 spawn\+Origin)
-\item 
+static void \mbox{\hyperlink{class_work_mechanic_1_1_chunk_spawner_a7a20fcaf7267ab216ee2d8d397d8ac48}{Spawn}} (Vector3 spawn\+Origin)
+\begin{DoxyCompactList}\small\item\em Spawn a new chunk using the current difficulty settings. To spawn a specific chunk with the correct probabilities, it uses this algorithm\+: \href{https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item}{\texttt{ https\+://stackoverflow.\+com/questions/38086513/selecting-\/random-\/item-\/from-\/list-\/given-\/probability-\/of-\/each-\/item}} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_work_mechanic_1_1_chunk_spawner_a7dca03e5cc3fc9ffd2687c611b26e79b}\label{class_work_mechanic_1_1_chunk_spawner_a7dca03e5cc3fc9ffd2687c611b26e79b}} 
 static void {\bfseries Despawn} (Game\+Object object\+To\+Remove)
 \end{DoxyCompactItemize}
@@ -70,6 +69,24 @@ Game\+Object {\bfseries spawn\+Origin}
 \doxysubsection{Detailed Description}
 This class is used to spawn chunks on the belt when it is needed. It also holds all the positions used in the interaction logic (of the chunk) 
 
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_work_mechanic_1_1_chunk_spawner_a7a20fcaf7267ab216ee2d8d397d8ac48}\label{class_work_mechanic_1_1_chunk_spawner_a7a20fcaf7267ab216ee2d8d397d8ac48}} 
+\index{WorkMechanic.ChunkSpawner@{WorkMechanic.ChunkSpawner}!Spawn@{Spawn}}
+\index{Spawn@{Spawn}!WorkMechanic.ChunkSpawner@{WorkMechanic.ChunkSpawner}}
+\doxysubsubsection{\texorpdfstring{Spawn()}{Spawn()}}
+{\footnotesize\ttfamily static void Work\+Mechanic.\+Chunk\+Spawner.\+Spawn (\begin{DoxyParamCaption}\item[{Vector3}]{spawn\+Origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Spawn a new chunk using the current difficulty settings. To spawn a specific chunk with the correct probabilities, it uses this algorithm\+: \href{https://stackoverflow.com/questions/38086513/selecting-random-item-from-list-given-probability-of-each-item}{\texttt{ https\+://stackoverflow.\+com/questions/38086513/selecting-\/random-\/item-\/from-\/list-\/given-\/probability-\/of-\/each-\/item}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spawn\+Origin} & The position where to spawn the chunk\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
